@@ -1,0 +1,351 @@
+$texto: #333;
+$azuloscuro: #00233b;
+$rojo: #df6940;
+$amarillo: #f2b234;
+$verde: #87a93c;
+$azul: #0378ad;
+$azulfooter: #296187;
+
+@mixin center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin style-button {
+  border-radius: 50px;
+  background-color: red;
+}
+
+html {
+  height: 100vh;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: 'Roboto Slab';
+  color: $texto;
+}
+
+h2 {
+  text-align: center;
+  font-size: 2.2em;
+  margin: 0;
+}
+
+h4{
+  color: $verde;
+  font-size: 1.5em;
+}
+p, span {
+  font-family: "Roboto";
+  color: $texto;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul, ol{
+  list-style: none;
+}
+
+button {
+  width: 50%;
+  border: none;
+  @include style-button;
+  transition: background-color 1s;
+  a{
+    color: white;
+  }
+  &:hover {
+    cursor: pointer;
+    background-color: white;
+    a{
+      color: red;
+      text-shadow: 1px 1px #8b8b8b;
+      transition: color 1s;
+    }
+  }
+}
+
+.texto-light {
+  font-family: 'Poppins';
+  font-weight: 400;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+}
+
+#main {
+  max-width: 1200px;
+}
+
+.contenedor{
+  margin-top: 3em;
+}
+
+// ESTILOS DE LA CABECERA
+header {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  #logo {
+    width: 30%;
+    @include center;
+    img{
+      width: 100%;
+    }
+  }
+  #menus{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    #submenu {
+      h5{
+      color: rgba(0, 0, 0, .6);
+      padding: 0 2em;
+        a{
+          color: rgba(0, 0, 0, .6);
+        }
+      }
+    }
+
+    nav{
+      font-family: "Poppins";
+      font-size: 1.5em;
+      width: 100%;
+      z-index: 100;
+      & ul {
+        display: flex;
+        justify-content: space-around;
+        margin: 0;
+      }
+      & li:hover ul{
+        display: block;
+      }
+      & li ul{
+        display: none;
+        position: absolute;
+        padding: 0;
+        background-color: $rojo;
+      }
+      & li a{
+				color: $azuloscuro;
+				text-decoration:none;
+				padding:10px 12px;
+				display:block;
+        &:hover{
+          background-color: $azul;
+          color: white;
+          & a{
+            background-color: $azuloscuro;
+          }
+        }
+      }
+      & li ul li{
+        position: relative;
+      }
+    }
+  }
+} // FIN DE LA CABECERA
+
+// CONTENEDOR PRESUPUESTO
+
+#presupuesto {
+  position: relative;
+  width: 100%;
+  h1{
+    position: absolute;
+    color: white;
+    top: 0;
+    left: 2em;
+    font-size: 3em;
+  }
+  img{
+    width: 100%;
+  }
+  .presupuesto{
+    position: absolute;
+    @include center;
+    bottom: 2em;
+    height: 67px;
+    right: 2em;
+    width: 323px;
+    z-index: 27;
+    button{
+      width: 100%;
+      padding: .8em;
+      a{
+        font-size: 2em;
+      }
+    }
+  }
+} //FIN CONTENEDOR presupuesto
+
+// CONTENEDOR GARANTÍA
+#garantia{
+  display: flex;
+  flex-flow: column wrap;
+  h3{
+    text-align: center;
+  }
+  #texto-garantia{
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;;
+    text-align: center;;
+    width: 100%;
+    ul {
+      list-style: none;
+      padding: 0;
+      li {
+        font-family: 'Poppins';
+        font-size: 1.5em;
+        font-weight: 400;
+        }
+      }
+    }
+  }
+  #sello-garantia{
+    width: 100%;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    justify-content: space-around;
+  }
+ //FIN CONTENEDOR GARANTÍA
+
+// CONTENEDOR SERVICIOS
+#servicios{
+  #servicios{
+    width: 100%;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    .secciones{
+      // box-sizing: border-box;
+      width: 33%;
+      display: -webkit-flex;
+      display: -ms-flex;
+      display: flex;
+      flex-direction: column;
+      padding: 1.2em;
+      h3{
+        font-size: 2em;
+        margin: 2%;
+        text-align: center;
+      }
+      img{
+        width: 100%;
+      }
+    }
+  }
+}
+
+//CONTENEDOR LINEPOOL
+#linepool{
+  width: 100%;
+  #contenedor-linepool{
+    width: 100%;
+    background-image: url("../img/banner_linepool.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    justify-content: flex-end;
+    #texto-linepool{
+      width: 50%;
+      text-align: center;
+      margin: 5em 0;
+      button{
+        padding: .8em;
+        a{
+          font-size: 2em;
+        }
+      }
+    }
+  }
+}
+
+//CONTENEDOR MUNDOLINE
+#mundoline{
+  #logo{
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    #texto{
+      width: 60%;
+      text-align: center;
+      padding: 0 2em;
+      button{
+        width: 100%;
+        padding: 1em;
+        a{
+          font-size: 2em;
+        }
+      }
+    }
+  }
+}
+
+// FOOTER
+footer{
+  width: 100%;
+  background-color: $azuloscuro;
+  #menu-footer{
+    ul{
+      display: -webkit-flex;
+      display: -ms-flex;
+      display: flex;
+      justify-content: space-around;
+      list-style: none;
+      margin: 0;
+      padding: 2%;
+      li a{
+        color: $azulfooter;
+      }
+      &:hover a{
+        color: $azul;
+      }
+    }
+  }
+  .copyright{
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    p{
+      padding: 0 2%;
+      color: $azulfooter;
+      font-size: 1.5em;
+    }
+    i{
+      padding: 0 15%;
+      font-size: 1.5em;
+      color: $azulfooter;
+    }
+  }
+  .aviso-legal{
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    justify-content: space-around;
+    p{
+      color: $azulfooter;
+    }
+  }
+}

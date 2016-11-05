@@ -1,0 +1,320 @@
+html {
+  height: 100vh;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Roboto Slab';
+  color: #333333;
+}
+
+h2 {
+  text-align: center;
+  font-size: 2.2em;
+  margin: 0;
+}
+
+h4 {
+  color: #87a93c;
+  font-size: 1.5em;
+}
+
+p, span {
+  font-family: "Roboto";
+  color: #333333;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+button {
+  width: 50%;
+  border: none;
+  border-radius: 50px;
+  background-color: red;
+  transition: background-color 1s;
+}
+button a {
+  color: white;
+}
+button:hover {
+  cursor: pointer;
+  background-color: white;
+}
+button:hover a {
+  color: red;
+  text-shadow: 1px 1px #8b8b8b;
+  transition: color 1s;
+}
+
+.texto-light {
+  font-family: 'Poppins';
+  font-weight: 400;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+}
+
+#main {
+  max-width: 1200px;
+}
+
+.contenedor {
+  margin-top: 3em;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+header #logo {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header #logo img {
+  width: 100%;
+}
+header #menus {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+header #menus #submenu h5 {
+  color: rgba(0, 0, 0, 0.6);
+  padding: 0 2em;
+}
+header #menus #submenu h5 a {
+  color: rgba(0, 0, 0, 0.6);
+}
+header #menus nav {
+  font-family: "Poppins";
+  font-size: 1.5em;
+  width: 100%;
+  z-index: 100;
+}
+header #menus nav ul {
+  display: flex;
+  justify-content: space-around;
+  margin: 0;
+}
+header #menus nav li:hover ul {
+  display: block;
+}
+header #menus nav li ul {
+  display: none;
+  position: absolute;
+  padding: 0;
+  background-color: #df6940;
+}
+header #menus nav li a {
+  color: #00233b;
+  text-decoration: none;
+  padding: 10px 12px;
+  display: block;
+}
+header #menus nav li a:hover {
+  background-color: #0378ad;
+  color: white;
+}
+header #menus nav li a:hover a {
+  background-color: #00233b;
+}
+header #menus nav li ul li {
+  position: relative;
+}
+
+#presupuesto {
+  position: relative;
+  width: 100%;
+}
+#presupuesto h1 {
+  position: absolute;
+  color: white;
+  top: 0;
+  left: 2em;
+  font-size: 3em;
+}
+#presupuesto img {
+  width: 100%;
+}
+#presupuesto .presupuesto {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 2em;
+  height: 67px;
+  right: 2em;
+  width: 323px;
+  z-index: 27;
+}
+#presupuesto .presupuesto button {
+  width: 100%;
+  padding: .8em;
+}
+#presupuesto .presupuesto button a {
+  font-size: 2em;
+}
+
+#garantia {
+  display: flex;
+  flex-flow: column wrap;
+}
+#garantia h3 {
+  text-align: center;
+}
+#garantia #texto-garantia {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
+#garantia #texto-garantia ul {
+  list-style: none;
+  padding: 0;
+}
+#garantia #texto-garantia ul li {
+  font-family: 'Poppins';
+  font-size: 1.5em;
+  font-weight: 400;
+}
+
+#sello-garantia {
+  width: 100%;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: space-around;
+}
+
+#servicios #servicios {
+  width: 100%;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+#servicios #servicios .secciones {
+  width: 33%;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  flex-direction: column;
+  padding: 1.2em;
+}
+#servicios #servicios .secciones h3 {
+  font-size: 2em;
+  margin: 2%;
+  text-align: center;
+}
+#servicios #servicios .secciones img {
+  width: 100%;
+}
+
+#linepool {
+  width: 100%;
+}
+#linepool #contenedor-linepool {
+  width: 100%;
+  background-image: url("../img/banner_linepool.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: flex-end;
+}
+#linepool #contenedor-linepool #texto-linepool {
+  width: 50%;
+  text-align: center;
+  margin: 5em 0;
+}
+#linepool #contenedor-linepool #texto-linepool button {
+  padding: .8em;
+}
+#linepool #contenedor-linepool #texto-linepool button a {
+  font-size: 2em;
+}
+
+#mundoline #logo {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+}
+#mundoline #logo #texto {
+  width: 60%;
+  text-align: center;
+  padding: 0 2em;
+}
+#mundoline #logo #texto button {
+  width: 100%;
+  padding: 1em;
+}
+#mundoline #logo #texto button a {
+  font-size: 2em;
+}
+
+footer {
+  width: 100%;
+  background-color: #00233b;
+}
+footer #menu-footer ul {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  margin: 0;
+  padding: 2%;
+}
+footer #menu-footer ul li a {
+  color: #296187;
+}
+footer #menu-footer ul:hover a {
+  color: #0378ad;
+}
+footer .copyright {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+}
+footer .copyright p {
+  padding: 0 2%;
+  color: #296187;
+  font-size: 1.5em;
+}
+footer .copyright i {
+  padding: 0 15%;
+  font-size: 1.5em;
+  color: #296187;
+}
+footer .aviso-legal {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: space-around;
+}
+footer .aviso-legal p {
+  color: #296187;
+}

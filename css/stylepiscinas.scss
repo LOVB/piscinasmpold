@@ -1,0 +1,44 @@
+$texto: #333;
+$azuloscuro: #00233b;
+$rojo: #df6940;
+$amarillo: #f2b234;
+$verde: #87a93c;
+$azul: #0378ad;
+$azulfooter: #296187;
+
+#menu{
+  
+}
+
+
+// SECCION DE OBRA
+#obra{
+  article{
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    .foto{
+      display: -webkit-flex;
+      display: -ms-flex;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      h3{
+        font-size: 2em;
+        color: $azul;
+      }
+    }
+    .texto{
+      margin-left: 1.5em;
+      display: -webkit-flex;
+      display: -ms-flex;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-content: center;
+      button{
+        width: 20%;
+      }
+    }
+  }
+}
