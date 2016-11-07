@@ -142,6 +142,7 @@ header {
 				text-decoration:none;
 				padding:10px 12px;
 				display:block;
+        transition: all 1s;
         &:hover{
           background-color: $azul;
           color: white;

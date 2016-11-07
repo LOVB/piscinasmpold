@@ -126,6 +126,7 @@ header #menus nav li a {
   text-decoration: none;
   padding: 10px 12px;
   display: block;
+  transition: all 1s;
 }
 header #menus nav li a:hover {
   background-color: #0378ad;
