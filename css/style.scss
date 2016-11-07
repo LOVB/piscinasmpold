@@ -4,7 +4,7 @@ $rojo: #df6940;
 $amarillo: #f2b234;
 $verde: #87a93c;
 $azul: #0378ad;
-$azulfooter: #296187;
+$azulfooter:  lighten($azuloscuro, 30%);
 
 @mixin center {
   display: flex;
@@ -135,7 +135,8 @@ header {
         display: none;
         position: absolute;
         padding: 0;
-        background-color: $rojo;
+        background-color: $azuloscuro;
+        transition: all 1s;
       }
       & li a{
 				color: $azuloscuro;
@@ -144,15 +145,15 @@ header {
 				display:block;
         transition: all 1s;
         &:hover{
-          background-color: $azul;
+          background-color: $azuloscuro;
           color: white;
-          & a{
-            background-color: $azuloscuro;
-          }
         }
       }
       & li ul li{
         position: relative;
+        a{
+          color: $azulfooter;
+        }
       }
     }
   }
@@ -315,11 +316,19 @@ footer{
       list-style: none;
       margin: 0;
       padding: 2%;
-      li a{
-        color: $azulfooter;
-      }
-      &:hover a{
-        color: $azul;
+      li {
+        position: relative;
+        a{
+          color: $azulfooter;
+          display: block;}
+        &:hover:after{
+          content: ' ';
+          position: absolute;
+          top: -100;
+          left: 0;
+          width: 100%;
+          border: 2px solid $azulfooter;
+        }
       }
     }
   }

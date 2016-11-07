@@ -38,3 +38,41 @@ $azulfooter: #296187;
     }
   }
 }
+
+#exteriores{
+  h2{
+    text-align: center;
+  }
+  .articulos-exteriores{
+    width: 100%;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    .texto{
+      width: 15%;
+      background-color: $azuloscuro;
+      display: -webkit-flex;
+      display: -ms-flex;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      h3{
+        text-align: center;
+        color: white;
+        font-size: 1.8em;
+      }
+
+    }
+    .imagenes{
+      width: 85%;
+      display: -webkit-flex;
+      display: -ms-flex;
+      display: flex;
+      img{
+        width: 20%;
+        display: block;
+        padding: 5px;
+      }
+    }
+  }
+}
