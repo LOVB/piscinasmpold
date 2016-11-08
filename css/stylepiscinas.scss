@@ -6,6 +6,11 @@ $verde: #87a93c;
 $azul: #0378ad;
 $azulfooter: #296187;
 
+@mixin center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 // SECCION DE OBRA
 #obra{
@@ -32,7 +37,8 @@ $azulfooter: #296187;
       flex-direction: column;
       justify-content: center;
       align-content: center;
-      button{
+      .boton{
+        @include center;
         width: 20%;
       }
     }
