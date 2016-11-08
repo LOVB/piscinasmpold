@@ -101,6 +101,9 @@ header #menus #submenu h5 {
 header #menus #submenu h5 a {
   color: rgba(0, 0, 0, 0.6);
 }
+header #menus #submenu h5 a:hover {
+  text-decoration: underline;
+}
 header #menus nav {
   font-family: "Poppins";
   font-size: 1.5em;

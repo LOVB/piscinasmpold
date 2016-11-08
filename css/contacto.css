@@ -1,0 +1,46 @@
+input {
+  border: 0 0 0 0;
+}
+
+#contacto {
+  width: 100%;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+}
+#contacto #foto img {
+  width: 100%;
+}
+#contacto #texto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#contacto #texto .contact_form ul {
+  width: 75%;
+  list-style-type: none;
+  list-style-position: outside;
+  margin: 0px;
+  padding: 0px;
+}
+#contacto #texto .contact_form ul li {
+  padding: 12px;
+  border-bottom: 1px solid #eee;
+  position: relative;
+}
+#contacto #texto .contact_form ul li:last-child {
+  border-bottom: none;
+}
+#contacto #texto .required_notification {
+  color: #d45252;
+  margin: 5px 0 0 0;
+}
+#contacto .contacto {
+  width: 50%;
+  height: 100vh;
+}
+
+footer.contenedor {
+  margin-top: 0;
+}
