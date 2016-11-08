@@ -59,7 +59,7 @@ button {
   }
   &:hover {
     cursor: pointer;
-    background-color: white;
+    background-color: #c3c3c3;
     a{
       color: red;
       text-shadow: 1px 1px #8b8b8b;
@@ -145,7 +145,7 @@ header {
 				display:block;
         transition: all 1s;
         &:hover{
-          background-color: $azuloscuro;
+          background-color: $azulfooter;
           color: white;
         }
       }

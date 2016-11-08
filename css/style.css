@@ -43,7 +43,7 @@ button a {
 }
 button:hover {
   cursor: pointer;
-  background-color: white;
+  background-color: #c3c3c3;
 }
 button:hover a {
   color: red;
@@ -130,7 +130,7 @@ header #menus nav li a {
   transition: all 1s;
 }
 header #menus nav li a:hover {
-  background-color: #00233b;
+  background-color: #007ed4;
   color: white;
 }
 header #menus nav li ul li {
