@@ -8,17 +8,26 @@ input {
   display: -ms-flex;
   display: flex;
 }
-#contacto #foto img {
-  width: 100%;
+#contacto #foto {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  align-items: flex-end;
+  background-image: url(../img/bgcontacto.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 #contacto #texto {
+  margin: 0 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  /* form element visual styles */
+  /* === HTML5 validation styles === */
 }
 #contacto #texto .contact_form ul {
-  width: 75%;
+  width: 100%;
   list-style-type: none;
   list-style-position: outside;
   margin: 0px;
@@ -32,13 +41,67 @@ input {
 #contacto #texto .contact_form ul li:last-child {
   border-bottom: none;
 }
+#contacto #texto .contact_form label {
+  width: 150px;
+  margin-top: 3px;
+  display: inline-block;
+  float: left;
+  padding: 3px;
+}
+#contacto #texto .contact_form input {
+  height: 30px;
+  width: 220px;
+  padding: 5px 8px;
+}
+#contacto #texto .contact_form textarea {
+  padding: 8px;
+  width: 300px;
+}
+#contacto #texto .contact_form button {
+  margin-left: 156px;
+}
 #contacto #texto .required_notification {
   color: #d45252;
   margin: 5px 0 0 0;
 }
+#contacto #texto .contact_form input, #contacto #texto .contact_form textarea {
+  border: 1px solid #aaa;
+  box-shadow: 0px 0px 3px #ccc, 0 10px 15px #eee inset;
+  border-radius: 2px;
+  padding-right: 30px;
+  -moz-transition: padding .25s;
+  -webkit-transition: padding .25s;
+  -o-transition: padding .25s;
+  transition: padding .25s;
+}
+#contacto #texto .contact_form input:focus, #contacto #texto .contact_form textarea:focus {
+  background: #fff;
+  border: 1px solid #555;
+  box-shadow: 0 0 3px #aaa;
+  padding-right: 70px;
+}
+#contacto #texto .contact_form input:required {
+  background: white url(../img/svg.png) no-repeat 98% center;
+  background-size: 10px;
+}
+#contacto #texto .contact_form input:required:valid, #contacto #texto .contact_form textarea:required:valid {
+  background: white url(../img/checkmark.png) no-repeat 98% center;
+  background-size: 10px;
+  box-shadow: 0 0 5px #5cd053;
+  border-color: #28921f;
+}
+#contacto #texto .contact_form input:focus:invalid, #contacto #texto .contact_form textarea:focus:invalid {
+  background: white url(../img/cross.png) no-repeat 98%;
+  background-size: 10px;
+  box-shadow: 0 0 5px #d45252;
+  border-color: #b03535;
+}
 #contacto .contacto {
   width: 50%;
-  height: 100vh;
+}
+#contacto button {
+  color: white;
+  padding: 5px;
 }
 
 footer.contenedor {

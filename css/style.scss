@@ -29,7 +29,7 @@ h1,h2,h3,h4,h5,h6 {
 h2 {
   text-align: center;
   font-size: 2.2em;
-  margin: 0;
+  margin: 0 0 15px 0;
 }
 
 h4{
@@ -246,7 +246,7 @@ header {
       display: -ms-flex;
       display: flex;
       flex-direction: column;
-      padding: 1.2em;
+      padding: 0 1.2em;
       h3{
         font-size: 1.7em;
         margin: 2%;
@@ -308,6 +308,7 @@ header {
         padding: 1em;
         a{
           font-size: 2em;
+          color: white;
         }
       }
     }
