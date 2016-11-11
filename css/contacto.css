@@ -2,13 +2,13 @@ input {
   border: 0 0 0 0;
 }
 
-#contacto {
+#contacto, #presupuesto {
   width: 100%;
   display: -webkit-flex;
   display: -ms-flex;
   display: flex;
 }
-#contacto #foto {
+#contacto #foto, #presupuesto #foto {
   display: -webkit-flex;
   display: -ms-flex;
   display: flex;
@@ -17,7 +17,7 @@ input {
   background-size: cover;
   background-repeat: no-repeat;
 }
-#contacto #texto {
+#contacto #texto, #presupuesto #texto {
   margin: 0 10px;
   display: flex;
   flex-direction: column;
@@ -26,45 +26,45 @@ input {
   /* form element visual styles */
   /* === HTML5 validation styles === */
 }
-#contacto #texto .contact_form ul {
+#contacto #texto .contact_form ul, #presupuesto #texto .contact_form ul {
   width: 100%;
   list-style-type: none;
   list-style-position: outside;
   margin: 0px;
   padding: 0px;
 }
-#contacto #texto .contact_form ul li {
+#contacto #texto .contact_form ul li, #presupuesto #texto .contact_form ul li {
   padding: 12px;
   border-bottom: 1px solid #eee;
   position: relative;
 }
-#contacto #texto .contact_form ul li:last-child {
+#contacto #texto .contact_form ul li:last-child, #presupuesto #texto .contact_form ul li:last-child {
   border-bottom: none;
 }
-#contacto #texto .contact_form label {
+#contacto #texto .contact_form label, #presupuesto #texto .contact_form label {
   width: 150px;
   margin-top: 3px;
   display: inline-block;
   float: left;
   padding: 3px;
 }
-#contacto #texto .contact_form input {
+#contacto #texto .contact_form input, #presupuesto #texto .contact_form input {
   height: 30px;
   width: 220px;
   padding: 5px 8px;
 }
-#contacto #texto .contact_form textarea {
+#contacto #texto .contact_form textarea, #presupuesto #texto .contact_form textarea {
   padding: 8px;
   width: 300px;
 }
-#contacto #texto .contact_form button {
+#contacto #texto .contact_form button, #presupuesto #texto .contact_form button {
   margin-left: 156px;
 }
-#contacto #texto .required_notification {
+#contacto #texto .required_notification, #presupuesto #texto .required_notification {
   color: #d45252;
   margin: 5px 0 0 0;
 }
-#contacto #texto .contact_form input, #contacto #texto .contact_form textarea {
+#contacto #texto .contact_form input, #contacto #texto .contact_form textarea, #presupuesto #texto .contact_form input, #presupuesto #texto .contact_form textarea {
   border: 1px solid #aaa;
   box-shadow: 0px 0px 3px #ccc, 0 10px 15px #eee inset;
   border-radius: 2px;
@@ -74,34 +74,73 @@ input {
   -o-transition: padding .25s;
   transition: padding .25s;
 }
-#contacto #texto .contact_form input:focus, #contacto #texto .contact_form textarea:focus {
+#contacto #texto .contact_form input:focus, #contacto #texto .contact_form textarea:focus, #presupuesto #texto .contact_form input:focus, #presupuesto #texto .contact_form textarea:focus {
   background: #fff;
   border: 1px solid #555;
   box-shadow: 0 0 3px #aaa;
   padding-right: 70px;
 }
-#contacto #texto .contact_form input:required {
+#contacto #texto .contact_form input:required, #presupuesto #texto .contact_form input:required {
   background: white url(../img/svg.png) no-repeat 98% center;
   background-size: 10px;
 }
-#contacto #texto .contact_form input:required:valid, #contacto #texto .contact_form textarea:required:valid {
+#contacto #texto .contact_form input:required:valid, #contacto #texto .contact_form textarea:required:valid, #presupuesto #texto .contact_form input:required:valid, #presupuesto #texto .contact_form textarea:required:valid {
   background: white url(../img/checkmark.png) no-repeat 98% center;
   background-size: 10px;
   box-shadow: 0 0 5px #5cd053;
   border-color: #28921f;
 }
-#contacto #texto .contact_form input:focus:invalid, #contacto #texto .contact_form textarea:focus:invalid {
+#contacto #texto .contact_form input:focus:invalid, #contacto #texto .contact_form textarea:focus:invalid, #presupuesto #texto .contact_form input:focus:invalid, #presupuesto #texto .contact_form textarea:focus:invalid {
   background: white url(../img/cross.png) no-repeat 98%;
   background-size: 10px;
   box-shadow: 0 0 5px #d45252;
   border-color: #b03535;
 }
-#contacto .contacto {
+#contacto .hoja-presupuesto, #presupuesto .hoja-presupuesto {
+  width: 70%;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0 0 10px #aaa;
+  padding: 5%;
+}
+#contacto .contacto, #presupuesto .contacto {
   width: 50%;
 }
-#contacto button {
+#contacto button, #presupuesto button {
   color: white;
   padding: 5px;
+}
+
+#presupuesto {
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.siscons {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.siscons li {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: none !important;
+}
+.siscons li label {
+  text-align: right;
+  width: 100px !important;
+}
+.siscons li input {
+  width: 20px !important;
+  height: 24px !important;
+  line-height: 20px;
 }
 
 footer.contenedor {
