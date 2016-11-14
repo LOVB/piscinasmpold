@@ -60,13 +60,19 @@ ul, ol{
   }
   &:hover {
     cursor: pointer;
-    background: #c3c3c3;
+    background: white;
     a{
       color: red;
       text-shadow: 1px 1px #8b8b8b;
       transition: color 1s;
     }
   }
+}
+
+.mini{
+  font-weight: bolder;
+  width: 30%;
+  padding: 5px;
 }
 
 .texto-light {
@@ -308,7 +314,6 @@ header {
         padding: 1em;
         a{
           font-size: 2em;
-          color: white;
         }
       }
     }
@@ -319,6 +324,7 @@ header {
 footer{
   width: 100%;
   background-color: $azuloscuro;
+  margin-bottom: 20px;
   #menu-footer{
     ul{
       display: -webkit-flex;
@@ -350,7 +356,9 @@ footer{
     display: flex;
     justify-content: center;
     align-items: baseline;
+    padding-bottom: 20px;
     p{
+      margin: 0;
       padding: 0 2%;
       color: $azulfooter;
       font-size: 1.5em;
@@ -359,6 +367,9 @@ footer{
       padding: 0 15%;
       font-size: 1.5em;
       color: $azulfooter;
+      &:hover{
+        color: white;
+      }
     }
   }
   .aviso-legal{
@@ -366,9 +377,12 @@ footer{
     display: -ms-flex;
     display: flex;
     justify-content: space-around;
-    
-    p{
+    padding-bottom: 20px;
+    a{
       color: $azulfooter;
+      &:hover{
+        text-decoration: underline;
+      }
     }
   }
 }

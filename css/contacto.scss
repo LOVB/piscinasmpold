@@ -4,127 +4,40 @@
   justify-content: center;
   align-items: center;
 }
-
-input{
-  border: 0 0 0 0;
-}
-
-#contacto, #presupuesto {
+#formulario{
   width: 100%;
+  height: 100vh;
   display: -webkit-flex;
   display: -ms-flex;
   display: flex;
-  #foto {
-    display: -webkit-flex;
-    display: -ms-flex;
-    display: flex;
-    align-items: flex-end;
-    background-image: url(../img/bgcontacto.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
+}
+.contacto{
+  width: 50%;
+  overflow: hidden;
+}
+#foto{
+  height: 100%;
+  img{
+    position: relative;
+    right: 200px;
+    top: -200px;
   }
-  #texto {
-    margin: 0 10px;
-    @include center;
-    .contact_form {
-      ul {
-        width: 100%; list-style-type: none; list-style-position: outside; margin: 0px; padding: 0px;
-      & li {
-        padding: 12px; border-bottom: 1px solid #eee; position: relative;
-        &:last-child { border-bottom: none; }
-        }
-      }
-      label {
-         width: 150px; margin-top: 3px; display: inline-block; float: left; padding: 3px;}
-      input {
-        height: 30px; width: 220px; padding: 5px 8px; }
-      textarea {
-        padding: 8px; width: 300px; }
-      button {
-        margin-left: 156px; }
-    }
-    .required_notification {
-      color: #d45252; margin: 5px 0 0 0;
-    }
-
-    /* form element visual styles */
-    .contact_form input, .contact_form textarea {
-      border: 1px solid #aaa;
-      box-shadow: 0px 0px 3px #ccc, 0 10px 15px #eee inset; border-radius: 2px; padding-right: 30px;
-      -moz-transition: padding .25s;
-      -webkit-transition: padding .25s;
-      -o-transition: padding .25s;
-      transition: padding .25s;
-    }
-    .contact_form input:focus, .contact_form textarea:focus{
-      background: #fff; border: 1px solid #555; box-shadow: 0 0 3px #aaa; padding-right: 70px;
-    }
-
-    /* === HTML5 validation styles === */
-    .contact_form input:required {
-      background: #fff url(../img/svg.png) no-repeat 98% center;
-      background-size: 10px;
-    }
-    .contact_form input:required:valid, .contact_form textarea:required:valid {
-      background: #fff url(../img/checkmark.png) no-repeat 98% center;
-      background-size: 10px;
-      box-shadow: 0 0 5px #5cd053; border-color: #28921f;
-    }
-    .contact_form input:focus:invalid, .contact_form textarea:focus:invalid {
-      background: #fff url(../img/cross.png) no-repeat 98%;
-      background-size: 10px;
-      box-shadow: 0 0 5px #d45252; border-color: #b03535; }
+}
+#texto{
+  padding: 0 20px;
+}
+form{
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 70%;
+  input, textarea{
+    border: none;
+    border-bottom: 1px solid lightgrey;
   }
-
-  .hoja-presupuesto{
-    width: 70%;
-    display: -webkit-flex;
-    display: -ms-flex;
-    display: flex;
-    justify-content: center;
-    box-shadow: 0 0 10px #aaa;
-    padding: 5%;
-  }
-  .contacto{
-    width: 50%;
-  }
-
   button{
     color: white;
-    padding: 5px;
   }
-}
-
-#presupuesto{
-  justify-content: center;
-  margin-bottom: 40px;
-}
-
-.siscons{
-  display: -webkit-flex;
-  display: -ms-flex;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  li {
-    display: -webkit-flex;
-    display: -ms-flex;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-bottom: none !important;
-    label{
-      text-align: right;
-      width: 100px !important;
-    }
-    input {
-      width: 20px !important;
-      height: 24px !important;
-      line-height: 20px;
-    }
-  }
-}
-
-footer.contenedor{
-  margin-top: 0;
 }

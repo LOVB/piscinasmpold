@@ -10,13 +10,13 @@
     <meta name="description" content="Grupo Mundoline en construcción de piscinas con el sello de garantía piscinas mundoline premium" />
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
     <link rel="shortcut icon" href="favicon.png"/>
-    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/5.0.0/normalize.css"/>
-    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css"/>
     <link rel="stylesheet" href="css/icomoon.css">
-    <link rel="stylesheet" href="css/contacto.css">
     <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/contacto.css">
     <link rel="stylesheet" href="css/responsive.css"/>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
 
 </head>
 <body>
@@ -45,28 +45,23 @@
       </div>
     </header>    <!--fin de cabezera-->
 
-    <div id="contacto" class="contenedor">
+    <div id="formulario" class="contenedor">
       <div class="contacto" id="foto">
-        <!-- <img src="img/bgcontacto.jpg" alt="Asistencia"> -->
+        <figure><img src="img/bgcontacto.jpg" alt="Asistencia"></figure>
       </div>
       <div class="contacto" id="texto">
         <h2>Rellena nuestro formulario de contacto.</h2>
         <p>Pregúntanos todas las dudas que tengas. Estaremos encantados de contestarte.</p>
         <form class="contact_form" action="#" id="contact_form" runat="server">
-          <div>
-            <ul>
-              <li><span class="required_notification">* Datos requeridos</span> </li>
-              <li> <label for="name">Nombre:</label> <input type="text" required /> </li>
-              <li> <label for="email">Email:</label> <input type="email" name="email" placeholder="info@developerji.com" required /></li>
-              <li> <label for="telefono">Teléfono:</label> <input type="tel" name="telephone" /></li>
-              <li> <label for="message">Mensaje:</label> <textarea name="message" cols="40" rows="6" required></textarea> </li>
-              <li> <button class="submit boton" type="submit">Enviar mensaje</button> </li>
-            </ul>
-          </div>
+              <span class="required_notification">* Datos requeridos</span>
+              <input type="text" required placeholder="Nombre"/>
+              <input type="email" name="email" placeholder="email" required />
+              <input type="tel" name="telephone" placeholder="Teléfono"/>
+              <textarea name="message" placeholder="Escriba aqui..."></textarea>
+              <button class="submit boton mini" type="submit">Enviar mensaje</button>
         </form>
       </div>
     </div>
-
 
     <!-- pie de página -->
     <footer class="contenedor">
@@ -85,16 +80,14 @@
         <a href="www.facebook.com/grupo_mundoline"><i class="fa fa-google-plus-square" aria-hidden="true"></i></a>
       </article>
       <article class="aviso-legal">
-        <a href="#"><p>Aviso legal</p></a>
-        <a href=""><p>Normas de utilización</p></a>
-        <a href=""><p>Todos los derechos reservados</p></a>
-        <a href=""><p>Trabaja con nosotros</p></a>
+        <a href="#">Aviso legal</a>
+        <a href="#">Normas de utilización</a>
+        <a href="#">Todos los derechos reservados</a>
+        <a href="#">Trabaja con nosotros</a>
       </article>
     </footer>
 
   </div> <!-- fin del contenedor general -->
-
-
 
 <!-- sccripts de jquery -->
 <script src="http://code.jquery.com/jquery-latest.min.js"></script>

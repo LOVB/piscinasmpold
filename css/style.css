@@ -43,12 +43,18 @@ ul, ol {
 }
 .boton:hover {
   cursor: pointer;
-  background: #c3c3c3;
+  background: white;
 }
 .boton:hover a {
   color: red;
   text-shadow: 1px 1px #8b8b8b;
   transition: color 1s;
+}
+
+.mini {
+  font-weight: bolder;
+  width: 30%;
+  padding: 5px;
 }
 
 .texto-light {
@@ -287,12 +293,12 @@ header #menus nav li ul li a {
 }
 #mundoline #logo #texto .boton a {
   font-size: 2em;
-  color: white;
 }
 
 footer {
   width: 100%;
   background-color: #00233b;
+  margin-bottom: 20px;
 }
 footer #menu-footer ul {
   display: -webkit-flex;
@@ -324,8 +330,10 @@ footer .copyright {
   display: flex;
   justify-content: center;
   align-items: baseline;
+  padding-bottom: 20px;
 }
 footer .copyright p {
+  margin: 0;
   padding: 0 2%;
   color: #007ed4;
   font-size: 1.5em;
@@ -335,12 +343,19 @@ footer .copyright i {
   font-size: 1.5em;
   color: #007ed4;
 }
+footer .copyright i:hover {
+  color: white;
+}
 footer .aviso-legal {
   display: -webkit-flex;
   display: -ms-flex;
   display: flex;
   justify-content: space-around;
+  padding-bottom: 20px;
 }
-footer .aviso-legal p {
+footer .aviso-legal a {
   color: #007ed4;
+}
+footer .aviso-legal a:hover {
+  text-decoration: underline;
 }
