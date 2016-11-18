@@ -3,7 +3,7 @@ html {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Roboto Slab';
+  font-family: 'Roboto Slab', sans-serif;
   color: #333333;
 }
 
@@ -19,7 +19,7 @@ h4 {
 }
 
 p, span {
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   color: #333333;
 }
 
@@ -32,28 +32,29 @@ ul, ol {
 }
 
 .boton {
-  width: 50%;
-  border: none;
-  border-radius: 50px;
+  border-radius: 20px;
+  background: -webkit-linear-gradient(270deg, #df6940, red);
   background: linear-gradient(180deg, #df6940, red);
-  transition: all 1s;
-}
-.boton a {
+  border: none;
   color: white;
+  font-size: 2em;
+  padding: .5em;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  width: 50%;
 }
 .boton:hover {
   cursor: pointer;
   background: white;
-}
-.boton:hover a {
   color: red;
   text-shadow: 1px 1px #8b8b8b;
+  -webkit-transition: color 1s;
   transition: color 1s;
 }
 
 .mini {
   font-weight: bolder;
-  width: 30%;
+  font-size: 1.2em;
   padding: 5px;
 }
 
@@ -63,16 +64,25 @@ ul, ol {
 }
 
 * {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
 body {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
   justify-content: center;
 }
 
 #main {
   max-width: 1200px;
+  width: 100%;
 }
 
 .contenedor {
@@ -81,14 +91,31 @@ body {
 
 header {
   width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
   justify-content: space-between;
 }
 header #logo {
   width: 30%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 header #logo img {
@@ -96,8 +123,18 @@ header #logo img {
 }
 header #menus {
   width: 70%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+  -ms-flex-align: end;
   align-items: flex-end;
 }
 header #menus #submenu h5 {
@@ -117,7 +154,12 @@ header #menus nav {
   z-index: 100;
 }
 header #menus nav ul {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: distribute;
   justify-content: space-around;
   margin: 0;
 }
@@ -129,6 +171,7 @@ header #menus nav li ul {
   position: absolute;
   padding: 0;
   background-color: #00233b;
+  -webkit-transition: all 1s;
   transition: all 1s;
 }
 header #menus nav li a {
@@ -136,6 +179,7 @@ header #menus nav li a {
   text-decoration: none;
   padding: 10px 12px;
   display: block;
+  -webkit-transition: all 1s;
   transition: all 1s;
 }
 header #menus nav li a:hover {
@@ -163,37 +207,48 @@ header #menus nav li ul li a {
 #presupuesto img {
   width: 100%;
 }
+#presupuesto #mobil {
+  display: none;
+}
 #presupuesto .presupuesto {
   position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   bottom: 2em;
   height: 67px;
   right: 2em;
-  width: 323px;
   z-index: 27;
 }
 #presupuesto .presupuesto .boton {
   width: 100%;
-  padding: .8em;
+  padding: .5em;
 }
 #presupuesto .presupuesto .boton a {
   font-size: 2em;
 }
 
 #garantia {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-flex-flow: column wrap;
+  -ms-flex-flow: column wrap;
   flex-flow: column wrap;
+  width: 100%;
 }
 #garantia h3 {
   text-align: center;
 }
 #garantia #texto-garantia {
+  display: -webkit-box;
   display: -webkit-flex;
-  display: -ms-flex;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: distribute;
   justify-content: space-around;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
   align-items: center;
   text-align: center;
   width: 100%;
@@ -210,25 +265,39 @@ header #menus nav li ul li a {
 
 #sello-garantia {
   width: 100%;
+  display: -webkit-box;
   display: -webkit-flex;
-  display: -ms-flex;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: distribute;
   justify-content: space-around;
 }
 
 #box-servicios {
   width: 100%;
+  display: -webkit-box;
   display: -webkit-flex;
-  display: -ms-flex;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
   justify-content: center;
 }
 #box-servicios .secciones {
   width: 33%;
+  display: -webkit-box;
   display: -webkit-flex;
-  display: -ms-flex;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
   flex-direction: column;
   padding: 0 1.2em;
 }
@@ -239,10 +308,20 @@ header #menus nav li ul li a {
 }
 #box-servicios .secciones img {
   width: 100%;
+  margin-bottom: 20px;
 }
 #box-servicios .secciones .boton {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 
@@ -252,46 +331,74 @@ header #menus nav li ul li a {
 #linepool #contenedor-linepool {
   width: 100%;
   background-image: url("../img/banner_linepool.jpg");
+  -webkit-background-size: cover;
   background-size: cover;
   background-repeat: no-repeat;
+  display: -webkit-box;
   display: -webkit-flex;
-  display: -ms-flex;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
   justify-content: flex-end;
 }
 #linepool #contenedor-linepool #texto-linepool {
   width: 50%;
   text-align: center;
   margin: 5em 0;
+  display: -webkit-box;
   display: -webkit-flex;
-  display: -ms-flex;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-flex-flow: column nowrap;
+  -ms-flex-flow: column nowrap;
   flex-flow: column nowrap;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
   align-items: center;
-}
-#linepool #contenedor-linepool #texto-linepool .boton {
-  width: 50%;
 }
 #linepool #contenedor-linepool #texto-linepool .boton a {
   display: block;
   font-size: 2.2em;
 }
 
-#mundoline #logo {
+#mundoline {
+  display: -webkit-box;
   display: -webkit-flex;
-  display: -ms-flex;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
-#mundoline #logo #texto {
-  width: 60%;
+#mundoline h2 {
+  width: 100%;
+}
+#mundoline #logo-footer {
+  width: 50%;
+}
+#mundoline #logo-footer img {
+  width: 80%;
+  margin: 0 auto;
+}
+#mundoline #texto {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: column wrap;
+  -ms-flex-flow: column wrap;
+  flex-flow: column wrap;
+  width: 50%;
   text-align: center;
   padding: 0 2em;
 }
-#mundoline #logo #texto .boton {
+#mundoline #texto .boton {
   width: 100%;
-  padding: 1em;
 }
-#mundoline #logo #texto .boton a {
+#mundoline #texto .boton a {
   font-size: 2em;
 }
 
@@ -301,9 +408,12 @@ footer {
   margin-bottom: 20px;
 }
 footer #menu-footer ul {
+  display: -webkit-box;
   display: -webkit-flex;
-  display: -ms-flex;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: distribute;
   justify-content: space-around;
   list-style: none;
   margin: 0;
@@ -325,10 +435,17 @@ footer #menu-footer ul li:hover:after {
   border: 2px solid #007ed4;
 }
 footer .copyright {
+  display: -webkit-box;
   display: -webkit-flex;
-  display: -ms-flex;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: baseline;
+  -webkit-align-items: baseline;
+  -ms-flex-align: baseline;
   align-items: baseline;
   padding-bottom: 20px;
 }
@@ -347,9 +464,12 @@ footer .copyright i:hover {
   color: white;
 }
 footer .aviso-legal {
+  display: -webkit-box;
   display: -webkit-flex;
-  display: -ms-flex;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: distribute;
   justify-content: space-around;
   padding-bottom: 20px;
 }

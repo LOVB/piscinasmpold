@@ -13,8 +13,10 @@ $azulfooter:  lighten($azuloscuro, 30%);
 }
 
 @mixin style-button {
-  border-radius: 50px;
+  border-radius: 20px;
   background: linear-gradient(180deg, $rojo, red);
+  border: none;
+  color: white;
 }
 
 html {
@@ -22,7 +24,7 @@ html {
 }
 
 h1,h2,h3,h4,h5,h6 {
-  font-family: 'Roboto Slab';
+  font-family: 'Roboto Slab', sans-serif;
   color: $texto;
 }
 
@@ -38,7 +40,7 @@ h4{
 }
 
 p, span {
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   color: $texto;
 }
 
@@ -51,27 +53,23 @@ ul, ol{
 }
 
 .boton {
-  width: 50%;
-  border: none;
   @include style-button;
+  font-size: 2em;
+  padding: .5em;
   transition: all 1s;
-  a{
-    color: white;
-  }
+  width: 50%;
   &:hover {
     cursor: pointer;
     background: white;
-    a{
-      color: red;
-      text-shadow: 1px 1px #8b8b8b;
-      transition: color 1s;
-    }
+    color: red;
+    text-shadow: 1px 1px #8b8b8b;
+    transition: color 1s;
   }
 }
 
 .mini{
   font-weight: bolder;
-  width: 30%;
+  font-size: 1.2em;
   padding: 5px;
 }
 
@@ -91,6 +89,7 @@ body {
 
 #main {
   max-width: 1200px;
+  width: 100%;
 }
 
 .contenedor{
@@ -184,17 +183,19 @@ header {
   img{
     width: 100%;
   }
+  #mobil{
+    display: none;
+  }
   .presupuesto{
     position: absolute;
-    @include center;
+    // @include center;
     bottom: 2em;
     height: 67px;
     right: 2em;
-    width: 323px;
     z-index: 27;
     .boton{
       width: 100%;
-      padding: .8em;
+      padding: .5em;
       a{
         font-size: 2em;
       }
@@ -206,16 +207,15 @@ header {
 #garantia{
   display: flex;
   flex-flow: column wrap;
+  width: 100%;
   h3{
     text-align: center;
   }
   #texto-garantia{
-    display: -webkit-flex;
-    display: -ms-flex;
     display: flex;
     justify-content: space-around;
-    align-items: center;;
-    text-align: center;;
+    align-items: center;
+    text-align: center;
     width: 100%;
     ul {
       list-style: none;
@@ -230,8 +230,6 @@ header {
   }
   #sello-garantia{
     width: 100%;
-    display: -webkit-flex;
-    display: -ms-flex;
     display: flex;
     justify-content: space-around;
   }
@@ -240,16 +238,12 @@ header {
 // CONTENEDOR SERVICIOS
   #box-servicios{
     width: 100%;
-    display: -webkit-flex;
-    display: -ms-flex;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     .secciones{
       // box-sizing: border-box;
       width: 33%;
-      display: -webkit-flex;
-      display: -ms-flex;
       display: flex;
       flex-direction: column;
       padding: 0 1.2em;
@@ -260,6 +254,7 @@ header {
       }
       img{
         width: 100%;
+        margin-bottom: 20px;
       }
       .boton{
         @include center;
@@ -275,21 +270,16 @@ header {
     background-image: url("../img/banner_linepool.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    display: -webkit-flex;
-    display: -ms-flex;
     display: flex;
     justify-content: flex-end;
     #texto-linepool{
       width: 50%;
       text-align: center;
       margin: 5em 0;
-      display: -webkit-flex;
-      display: -ms-flex;
       display: flex;
       flex-flow: column nowrap;
       align-items: center;
       .boton{
-        width: 50%;
         a{
           display: block;
           font-size: 2.2em;
@@ -301,23 +291,32 @@ header {
 
 //CONTENEDOR MUNDOLINE
 #mundoline{
-  #logo{
-    display: -webkit-flex;
-    display: -ms-flex;
+  display: flex;
+  flex-wrap: wrap;
+  h2{
+    width: 100%;
+  }
+  #logo-footer{
+    width: 50%;
+    img{
+      width: 80%;
+      margin:0 auto;
+    }
+  }
+  #texto{
     display: flex;
-    #texto{
-      width: 60%;
-      text-align: center;
-      padding: 0 2em;
-      .boton{
-        width: 100%;
-        padding: 1em;
-        a{
-          font-size: 2em;
-        }
+    flex-flow: column wrap;
+    width: 50%;
+    text-align: center;
+    padding: 0 2em;
+    .boton{
+      width: 100%;
+      a{
+        font-size: 2em;
       }
     }
   }
+
 }
 
 // FOOTER
@@ -327,8 +326,6 @@ footer{
   margin-bottom: 20px;
   #menu-footer{
     ul{
-      display: -webkit-flex;
-      display: -ms-flex;
       display: flex;
       justify-content: space-around;
       list-style: none;
@@ -351,8 +348,6 @@ footer{
     }
   }
   .copyright{
-    display: -webkit-flex;
-    display: -ms-flex;
     display: flex;
     justify-content: center;
     align-items: baseline;
@@ -373,8 +368,6 @@ footer{
     }
   }
   .aviso-legal{
-    display: -webkit-flex;
-    display: -ms-flex;
     display: flex;
     justify-content: space-around;
     padding-bottom: 20px;

@@ -1,31 +1,144 @@
+/*ESTILOS RESPONSIVE DESIGN */
+
+
 /* ---> Medida para Tablets horizontal <--- */
 @media screen and (max-width: 1024px){
+
 }
+
 /* ---> Medida para Tablets en vertical <--- */
 
-@media screen and (max-width: 940px){
-header{
+@media screen and (max-width: 768px) {
+
+	#presupuesto #mobil{
+		display: none;
+	}
+
+	#presupuesto #desktop{
+		display: block;
+	}
+	header {
 	flex-direction: column;
 	justify-content: center;
-}
-header #logo{
+	}
+
+	header #logo {
 	width: 100%;
-}
-header #logo img{
-	width: 50%;
-}
-header #menus{
+	}
+
+	header #logo a{
+		text-align: center;
+	}
+
+	header #logo img {
+	width: 80%;
+	}
+
+	header #menus {
 	width: 100%;
 	align-items: center;
+	}
+
+  #linepool #contenedor-linepool{
+    background-position-x: -100px;
+  }
+
+	#mundoline{
+		flex-direction: column;
+		align-items: center;
+		width: 100%;
+	}
+
+	#mundoline #logo-footer{
+		width: 50%;
+    text-align: center;
+	}
+
+	#mundoline #texto {
+		width: 100%;
+	}
+
 }
 
 /* ---> Medida Smarthphone <--- */
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 480px) {
 
-	#main #article_list article .thumb {
+	header #logo, header #menus{
 		width: 100%;
-		float: left;
-		margin-bottom: 20px;
+		text-align: center;
 	}
+
+	header #logo img{
+		width: 90%;
+		padding-top: 1em;
+	}
+
+	header #menus{
+		display: none;
+	}
+
+	#presupuesto h1{
+		font-size: 2.2em;
+		text-align: center;
+		left: 0;
+	}
+
+	#presupuesto #desktop{
+		display: none;
+	}
+
+	#presupuesto #mobil{
+		display: block;
+	}
+
+	#garantia #texto-garantia{
+		flex-direction: column;
+	}
+
+	#box-servicios .secciones{
+		width: 100%;
 }
+	#box-servicios .secciones h3{
+		margin-top: 5px;
+	}
+
+	#box-servicios .secciones .mini{
+		display: none;
+}
+
+	#linepool #contenedor-linepool{
+		background-size: cover;
+		justify-content: center;
+		background-position-x: -400px;
+		align-items: center;
+}
+
+	#linepool #contenedor-linepool #texto-linepool{
+	width: 90%;
+}
+
+	#mundoline{
+		flex-direction: column;
+		align-items: center;
+		width: 100%;
+	}
+
+	#mundoline #logo-footer{
+		width: 80%;
+	}
+
+	#mundoline #texto {
+		width: 100%;
+	}
+
+ #menu-footer{
+	 display: none;
+ }
+
+ .aviso-legal{
+	 font-size: .5em;
+ }
+
+}
+
