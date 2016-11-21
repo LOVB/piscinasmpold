@@ -13,10 +13,27 @@ $azulfooter:  lighten($azuloscuro, 30%);
 }
 
 @mixin style-button {
-  border-radius: 20px;
-  background: linear-gradient(180deg, $rojo, red);
-  border: none;
-  color: white;
+  display: inline-block;
+  margin: 0;
+  padding: .461em 1.563em .41em;
+  color: snow!important;
+  text-align: center;
+  text-decoration: none;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.7);
+  text-transform: uppercase;
+  line-height: 1;
+  font-size: .9em;
+  cursor: pointer;
+  font-family: "proxima-nova", sans-serif;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.4);
+  border: 1px solid hsl(0, 52%, 50%);
+  background: hsl(0, 72%, 50%);
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  border-radius: 100px;
+  -webkit-box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.1), inset 0 0 1px 1px rgba(255, 255, 255, 0.15);
+  -moz-box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.1), inset 0 0 1px 1px rgba(255, 255, 255, 0.15);
+  box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.1), inset 0 0 1px 1px rgba(255, 255, 255, 0.15);
 }
 
 html {
@@ -25,13 +42,15 @@ html {
 
 h1,h2,h3,h4,h5,h6 {
   font-family: 'Roboto Slab', sans-serif;
-  color: $texto;
+  color: $azuloscuro;
 }
 
 h2 {
   text-align: center;
   font-size: 2.2em;
   margin: 0 0 15px 0;
+  background-color: $azuloscuro;
+  color: snow;
 }
 
 h4{
@@ -56,21 +75,22 @@ ul, ol{
   @include style-button;
   font-size: 2em;
   padding: .5em;
-  transition: all 1s;
-  width: 50%;
+  transition: all .5s;
+  // width: 50%;
   &:hover {
     cursor: pointer;
-    background: white;
-    color: red;
-    text-shadow: 1px 1px #8b8b8b;
-    transition: color 1s;
+    background: hsl(0, 100%, 50%);
+  }
+  &:active {
+    -webkit-box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.1), inset 0 0 1px 1px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.1), inset 0 0 1px 1px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.1), inset 0 0 1px 1px rgba(0, 0, 0, 0.1);
   }
 }
 
 .mini{
-  font-weight: bolder;
-  font-size: 1.2em;
-  padding: 5px;
+  font-size: 1em;
+  width: 160px;
 }
 
 .texto-light {
@@ -145,17 +165,17 @@ header {
         position: absolute;
         padding: 0;
         background-color: $azuloscuro;
-        transition: all 1s;
+        transition: all .3s;
       }
       & li a{
 				color: $azuloscuro;
 				text-decoration:none;
 				padding:10px 12px;
 				display:block;
-        transition: all 1s;
+        transition: all .3s;
         &:hover{
           background-color: $azulfooter;
-          color: white;
+          color: snow;
         }
       }
       & li ul li{
@@ -175,7 +195,7 @@ header {
   width: 100%;
   h1{
     position: absolute;
-    color: white;
+    color: snow;
     top: 0;
     left: 2em;
     font-size: 3em;
@@ -363,7 +383,7 @@ footer{
       font-size: 1.5em;
       color: $azulfooter;
       &:hover{
-        color: white;
+        color: snow;
       }
     }
   }

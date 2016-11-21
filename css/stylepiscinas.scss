@@ -37,10 +37,6 @@ $azulfooter: #296187;
       flex-direction: column;
       justify-content: center;
       align-content: center;
-      .boton{
-        @include center;
-        width: 20%;
-      }
     }
   }
 }

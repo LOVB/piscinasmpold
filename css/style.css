@@ -4,13 +4,15 @@ html {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Roboto Slab', sans-serif;
-  color: #333333;
+  color: #00233b;
 }
 
 h2 {
   text-align: center;
   font-size: 2.2em;
   margin: 0 0 15px 0;
+  background-color: #00233b;
+  color: snow;
 }
 
 h4 {
@@ -32,30 +34,41 @@ ul, ol {
 }
 
 .boton {
-  border-radius: 20px;
-  background: -webkit-linear-gradient(270deg, #df6940, red);
-  background: linear-gradient(180deg, #df6940, red);
-  border: none;
-  color: white;
+  display: inline-block;
+  margin: 0;
+  padding: .461em 1.563em .41em;
+  color: snow !important;
+  text-align: center;
+  text-decoration: none;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.7);
+  text-transform: uppercase;
+  line-height: 1;
+  font-size: .9em;
+  cursor: pointer;
+  font-family: "proxima-nova", sans-serif;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.4);
+  border: 1px solid #c23d3d;
+  background: #db2424;
+  border-radius: 100px;
+  -webkit-box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.1), inset 0 0 1px 1px rgba(255, 255, 255, 0.15);
+  box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.1), inset 0 0 1px 1px rgba(255, 255, 255, 0.15);
   font-size: 2em;
   padding: .5em;
-  -webkit-transition: all 1s;
-  transition: all 1s;
-  width: 50%;
+  -webkit-transition: all .5s;
+  transition: all .5s;
 }
 .boton:hover {
   cursor: pointer;
-  background: white;
-  color: red;
-  text-shadow: 1px 1px #8b8b8b;
-  -webkit-transition: color 1s;
-  transition: color 1s;
+  background: red;
+}
+.boton:active {
+  -webkit-box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.1), inset 0 0 1px 1px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.1), inset 0 0 1px 1px rgba(0, 0, 0, 0.1);
 }
 
 .mini {
-  font-weight: bolder;
-  font-size: 1.2em;
-  padding: 5px;
+  font-size: 1em;
+  width: 160px;
 }
 
 .texto-light {
@@ -171,20 +184,20 @@ header #menus nav li ul {
   position: absolute;
   padding: 0;
   background-color: #00233b;
-  -webkit-transition: all 1s;
-  transition: all 1s;
+  -webkit-transition: all .3s;
+  transition: all .3s;
 }
 header #menus nav li a {
   color: #00233b;
   text-decoration: none;
   padding: 10px 12px;
   display: block;
-  -webkit-transition: all 1s;
-  transition: all 1s;
+  -webkit-transition: all .3s;
+  transition: all .3s;
 }
 header #menus nav li a:hover {
   background-color: #007ed4;
-  color: white;
+  color: snow;
 }
 header #menus nav li ul li {
   position: relative;
@@ -199,7 +212,7 @@ header #menus nav li ul li a {
 }
 #presupuesto h1 {
   position: absolute;
-  color: white;
+  color: snow;
   top: 0;
   left: 2em;
   font-size: 3em;
@@ -461,7 +474,7 @@ footer .copyright i {
   color: #007ed4;
 }
 footer .copyright i:hover {
-  color: white;
+  color: snow;
 }
 footer .aviso-legal {
   display: -webkit-box;
