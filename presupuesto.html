@@ -48,25 +48,27 @@
     <div id="presupuesto" class="contenedor">
       <div class="hoja-presupuesto" id="texto">
         <h2>Solicitud de presupuesto</h2>
-        <p>Dinos todas las características que necesites y te responderemos con un presupuesto adaptado a tus necesidades.</p>
+        <h3>Dinos todas las características que necesites y te responderemos con un presupuesto adaptado a tus necesidades.</h3>
         <form class="contact_form" action="#" id="contact_form" runat="server">
           <div>
+            <h4>Datos personales</h4>
             <ul>
-              <li><span class="required_notification">* Datos requeridos</span> </li>
-              <li> <label for="name">Nombre:</label> <input type="text" required /> </li>
-              <li> <label for="email">Email:</label> <input type="email" name="email" placeholder="info@example.com" required /></li>
-              <li> <label for="telefono">Teléfono:</label> <input type="tel" name="telephone" /></li>
-              <li><label for="place">Localidad: </label><input type="text" name="location"></li>
+              <li><input type="text" placeholder="Nombre" required /> </li>
+              <li><input type="email" name="email" placeholder="info@example.com" required /></li>
+              <li><input type="tel" name="telephone" placeholder="Teléfono"/></li>
+              <li><input type="text" name="location" placeholder="Localidad"></li>
               <li>
+                <h4>Tipo de picina</h4>
                 <ul class="siscons">
                   <li><label for="checkbox">Hormigón </label><input type="checkbox" /></li>
                   <li><label for="checkbox">Acero </label><input type="checkbox" /></li>
                   <li><label for="checkbox">prefabricada </label><input type="checkbox" /></li>
                 </ul>
               </li>
-              <li> <label for="message">Mensaje:</label> <textarea name="message" cols="40" rows="6" required></textarea> </li>
-              <li> <button class="submit boton" type="submit">Enviar presupuesto</button> </li>
+              <h4>Deja tu descripción</h4>
+              <li> <label for="message">Mensaje:</label> <textarea name="message" required></textarea> </li>
             </ul>
+            <button class="submit boton" type="submit">Enviar presupuesto</button>
           </div>
         </form>
       </div>

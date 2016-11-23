@@ -1,9 +1,371 @@
-#formulario {
-  width: 100%;
+html {
   height: 100vh;
-  display: -webkit-flex;
-  display: -ms-flex;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Roboto Slab', sans-serif;
+  color: #002238;
+}
+
+h2 {
+  text-align: center;
+  font-size: 2.2em;
+  margin: 0 0 15px 0;
+  background-color: #002238;
+  color: mintcream;
+}
+
+h4 {
+  color: #87a93d;
+  font-size: 1.5em;
+}
+
+p, span {
+  font-family: "Roboto", sans-serif;
+  color: #333333;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+.boton {
+  display: inline-block;
+  margin: 0;
+  padding: .461em 1.563em .41em;
+  color: mintcream !important;
+  text-align: center;
+  text-decoration: none;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.7);
+  text-transform: uppercase;
+  line-height: 1;
+  font-size: .9em;
+  cursor: pointer;
+  font-family: "proxima-nova", sans-serif;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.4);
+  border: 1px solid #c23d3d;
+  background: #db2424;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  border-radius: 100px;
+  -webkit-box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.1), inset 0 0 1px 1px rgba(255, 255, 255, 0.15);
+  -moz-box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.1), inset 0 0 1px 1px rgba(255, 255, 255, 0.15);
+  box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.1), inset 0 0 1px 1px rgba(255, 255, 255, 0.15);
+  font-size: 2em;
+  padding: .5em;
+  transition: all .5s;
+}
+.boton:hover {
+  cursor: pointer;
+  background: red;
+}
+.boton:active {
+  -webkit-box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.1), inset 0 0 1px 1px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.1), inset 0 0 1px 1px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.1), inset 0 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+.mini {
+  font-size: 1em;
+  width: 160px;
+}
+
+.texto-light {
+  font-family: 'Poppins';
+  font-weight: 400;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
   display: flex;
+  justify-content: center;
+}
+
+#main {
+  max-width: 1200px;
+  width: 100%;
+}
+
+.contenedor {
+  margin-top: 3em;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+header #logo {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header #logo img {
+  width: 100%;
+}
+header #menus {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+header #menus #submenu h5 {
+  color: rgba(0, 0, 0, 0.6);
+  padding: 0 2em;
+}
+header #menus #submenu h5 a {
+  color: rgba(0, 0, 0, 0.6);
+}
+header #menus #submenu h5 a:hover {
+  text-decoration: underline;
+}
+header #menus nav {
+  font-family: "Poppins";
+  font-size: 1.5em;
+  width: 100%;
+  z-index: 100;
+}
+header #menus nav ul {
+  display: flex;
+  justify-content: space-around;
+  margin: 0;
+}
+header #menus nav li:hover ul {
+  display: block;
+}
+header #menus nav li ul {
+  display: none;
+  position: absolute;
+  padding: 0;
+  background-color: #002238;
+  transition: all .3s;
+}
+header #menus nav li a {
+  color: #002238;
+  text-decoration: none;
+  padding: 10px 12px;
+  display: block;
+  transition: all .3s;
+}
+header #menus nav li a:hover {
+  background-color: #002238;
+  color: mintcream;
+}
+header #menus nav li ul li {
+  position: relative;
+}
+header #menus nav li ul li a {
+  color: #007dd1;
+}
+
+#presupuesto {
+  position: relative;
+  width: 100%;
+}
+#presupuesto h1 {
+  position: absolute;
+  color: mintcream;
+  top: 0;
+  left: 2em;
+  font-size: 3em;
+}
+#presupuesto img {
+  width: 100%;
+}
+#presupuesto #mobil {
+  display: none;
+}
+#presupuesto .presupuesto {
+  position: absolute;
+  bottom: 2em;
+  height: 67px;
+  right: 2em;
+  z-index: 27;
+}
+#presupuesto .presupuesto .boton {
+  width: 100%;
+  padding: .5em;
+}
+#presupuesto .presupuesto .boton a {
+  font-size: 2em;
+}
+
+#garantia {
+  display: flex;
+  flex-flow: column wrap;
+  width: 100%;
+}
+#garantia h3 {
+  text-align: center;
+}
+#garantia #texto-garantia {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
+#garantia #texto-garantia ul {
+  list-style: none;
+  padding: 0;
+}
+#garantia #texto-garantia ul li {
+  font-family: 'Poppins';
+  font-size: 1.5em;
+  font-weight: 400;
+}
+
+#sello-garantia {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+#box-servicios {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+#box-servicios .secciones {
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+  padding: 0 1.2em;
+}
+#box-servicios .secciones h3 {
+  font-size: 1.7em;
+  margin: 2%;
+  text-align: center;
+}
+#box-servicios .secciones img {
+  width: 100%;
+  margin-bottom: 20px;
+}
+#box-servicios .secciones .boton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#linepool {
+  width: 100%;
+}
+#linepool #contenedor-linepool {
+  width: 100%;
+  background-image: url("../img/banner_linepool.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: flex-end;
+}
+#linepool #contenedor-linepool #texto-linepool {
+  width: 50%;
+  text-align: center;
+  margin: 5em 0;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+#linepool #contenedor-linepool #texto-linepool .boton a {
+  display: block;
+  font-size: 2.2em;
+}
+
+#mundoline {
+  display: flex;
+  flex-wrap: wrap;
+}
+#mundoline h2 {
+  width: 100%;
+}
+#mundoline #logo-footer {
+  width: 50%;
+}
+#mundoline #logo-footer img {
+  width: 80%;
+  margin: 0 auto;
+}
+#mundoline #texto {
+  display: flex;
+  flex-flow: column wrap;
+  width: 50%;
+  text-align: center;
+  padding: 0 2em;
+}
+#mundoline #texto .boton {
+  width: 100%;
+}
+#mundoline #texto .boton a {
+  font-size: 2em;
+}
+
+footer {
+  width: 100%;
+  background-color: #002238;
+  margin-bottom: 20px;
+}
+footer #menu-footer ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  margin: 0;
+  padding: 2%;
+}
+footer #menu-footer ul li {
+  position: relative;
+}
+footer #menu-footer ul li a {
+  color: #007dd1;
+  display: block;
+}
+footer #menu-footer ul li:hover:after {
+  content: ' ';
+  position: absolute;
+  top: -100;
+  left: 0;
+  width: 100%;
+  border: 2px solid #007dd1;
+}
+footer .copyright {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  padding-bottom: 20px;
+}
+footer .copyright p {
+  margin: 0;
+  padding: 0 2%;
+  color: #007dd1;
+  font-size: 1.5em;
+}
+footer .copyright i {
+  padding: 0 15%;
+  font-size: 1.5em;
+  color: #007dd1;
+}
+footer .copyright i:hover {
+  color: mintcream;
+}
+footer .aviso-legal {
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 20px;
+}
+footer .aviso-legal a {
+  color: #007dd1;
+}
+footer .aviso-legal a:hover {
+  text-decoration: underline;
 }
 
 .contacto {
@@ -38,4 +400,52 @@ form input, form textarea {
 }
 form button {
   color: white;
+}
+
+#presupuesto .hoja-presupuesto {
+  width: 90%;
+  margin: 0 auto;
+}
+#presupuesto .hoja-presupuesto h2 {
+  font-size: 3em;
+  padding: 10px;
+  text-align: center;
+  background-color: #002238;
+  color: snow;
+}
+#presupuesto .hoja-presupuesto h3 {
+  color: #de673f;
+  font-size: 1.3em;
+}
+#presupuesto .hoja-presupuesto .contact_form {
+  margin-top: 20px;
+}
+#presupuesto .hoja-presupuesto .contact_form div ul:last-child {
+  margin-top: 20px;
+}
+#presupuesto .hoja-presupuesto .contact_form h4 {
+  color: #9ed8ff;
+  margin-top: 10px;
+  border-bottom: 2px solid #9ed8ff;
+  font-size: 1.5em;
+}
+#presupuesto .hoja-presupuesto .contact_form input {
+  width: 80%;
+  font-size: 18px;
+  margin: 15px 0;
+  border: none;
+  border-bottom: 1px solid #ccc;
+}
+#presupuesto .hoja-presupuesto .contact_form .siscons {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-around;
+}
+#presupuesto .hoja-presupuesto .contact_form .siscons li {
+  display: flex;
+  align-items: center;
+}
+#presupuesto .hoja-presupuesto .contact_form .siscons li input {
+  width: 30px;
+  margin: 0 10px;
 }

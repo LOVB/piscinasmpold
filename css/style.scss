@@ -1,10 +1,11 @@
-$texto: #333;
-$azuloscuro: #00233b;
-$rojo: #df6940;
-$amarillo: #f2b234;
-$verde: #87a93c;
-$azul: #0378ad;
+$texto: hsl(0, 0%, 20%);
+$azuloscuro: hsl(204, 100%, 11%);
+$rojo: hsl(15, 71%, 56%);
+$amarillo: hsl(39, 87%, 57%);
+$verde: hsl(79, 47%, 45%);
+$azul: hsl(198, 96%, 34%);
 $azulfooter:  lighten($azuloscuro, 30%);
+$blanco: hsl(149, 100%, 98%);
 
 @mixin center {
   display: flex;
@@ -16,7 +17,7 @@ $azulfooter:  lighten($azuloscuro, 30%);
   display: inline-block;
   margin: 0;
   padding: .461em 1.563em .41em;
-  color: snow!important;
+  color: $blanco!important;
   text-align: center;
   text-decoration: none;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.7);
@@ -36,6 +37,15 @@ $azulfooter:  lighten($azuloscuro, 30%);
   box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.1), inset 0 0 1px 1px rgba(255, 255, 255, 0.15);
 }
 
+@mixin hover-menu {
+    content: ' ';
+    position: absolute;
+    top: -100;
+    left: 0;
+    width: 100%;
+    border: 2px solid $azulfooter;
+}
+
 html {
   height: 100vh;
 }
@@ -50,7 +60,7 @@ h2 {
   font-size: 2.2em;
   margin: 0 0 15px 0;
   background-color: $azuloscuro;
-  color: snow;
+  color: $blanco;
 }
 
 h4{
@@ -174,8 +184,8 @@ header {
 				display:block;
         transition: all .3s;
         &:hover{
-          background-color: $azulfooter;
-          color: snow;
+          background-color: $azuloscuro;
+          color: $blanco;
         }
       }
       & li ul li{
@@ -195,7 +205,7 @@ header {
   width: 100%;
   h1{
     position: absolute;
-    color: snow;
+    color: $blanco;
     top: 0;
     left: 2em;
     font-size: 3em;
@@ -357,12 +367,7 @@ footer{
           color: $azulfooter;
           display: block;}
         &:hover:after{
-          content: ' ';
-          position: absolute;
-          top: -100;
-          left: 0;
-          width: 100%;
-          border: 2px solid $azulfooter;
+          @include hover-menu;
         }
       }
     }
@@ -383,7 +388,7 @@ footer{
       font-size: 1.5em;
       color: $azulfooter;
       &:hover{
-        color: snow;
+        color: $blanco;
       }
     }
   }

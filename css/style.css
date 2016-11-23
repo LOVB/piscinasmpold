@@ -4,19 +4,19 @@ html {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Roboto Slab', sans-serif;
-  color: #00233b;
+  color: #002238;
 }
 
 h2 {
   text-align: center;
   font-size: 2.2em;
   margin: 0 0 15px 0;
-  background-color: #00233b;
-  color: snow;
+  background-color: #002238;
+  color: mintcream;
 }
 
 h4 {
-  color: #87a93c;
+  color: #87a93d;
   font-size: 1.5em;
 }
 
@@ -37,7 +37,7 @@ ul, ol {
   display: inline-block;
   margin: 0;
   padding: .461em 1.563em .41em;
-  color: snow !important;
+  color: mintcream !important;
   text-align: center;
   text-decoration: none;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.7);
@@ -183,12 +183,12 @@ header #menus nav li ul {
   display: none;
   position: absolute;
   padding: 0;
-  background-color: #00233b;
+  background-color: #002238;
   -webkit-transition: all .3s;
   transition: all .3s;
 }
 header #menus nav li a {
-  color: #00233b;
+  color: #002238;
   text-decoration: none;
   padding: 10px 12px;
   display: block;
@@ -196,14 +196,14 @@ header #menus nav li a {
   transition: all .3s;
 }
 header #menus nav li a:hover {
-  background-color: #007ed4;
-  color: snow;
+  background-color: #002238;
+  color: mintcream;
 }
 header #menus nav li ul li {
   position: relative;
 }
 header #menus nav li ul li a {
-  color: #007ed4;
+  color: #007dd1;
 }
 
 #presupuesto {
@@ -212,7 +212,7 @@ header #menus nav li ul li a {
 }
 #presupuesto h1 {
   position: absolute;
-  color: snow;
+  color: mintcream;
   top: 0;
   left: 2em;
   font-size: 3em;
@@ -417,7 +417,7 @@ header #menus nav li ul li a {
 
 footer {
   width: 100%;
-  background-color: #00233b;
+  background-color: #002238;
   margin-bottom: 20px;
 }
 footer #menu-footer ul {
@@ -436,7 +436,7 @@ footer #menu-footer ul li {
   position: relative;
 }
 footer #menu-footer ul li a {
-  color: #007ed4;
+  color: #007dd1;
   display: block;
 }
 footer #menu-footer ul li:hover:after {
@@ -445,7 +445,7 @@ footer #menu-footer ul li:hover:after {
   top: -100;
   left: 0;
   width: 100%;
-  border: 2px solid #007ed4;
+  border: 2px solid #007dd1;
 }
 footer .copyright {
   display: -webkit-box;
@@ -465,16 +465,16 @@ footer .copyright {
 footer .copyright p {
   margin: 0;
   padding: 0 2%;
-  color: #007ed4;
+  color: #007dd1;
   font-size: 1.5em;
 }
 footer .copyright i {
   padding: 0 15%;
   font-size: 1.5em;
-  color: #007ed4;
+  color: #007dd1;
 }
 footer .copyright i:hover {
-  color: snow;
+  color: mintcream;
 }
 footer .aviso-legal {
   display: -webkit-box;
@@ -487,7 +487,7 @@ footer .aviso-legal {
   padding-bottom: 20px;
 }
 footer .aviso-legal a {
-  color: #007ed4;
+  color: #007dd1;
 }
 footer .aviso-legal a:hover {
   text-decoration: underline;
