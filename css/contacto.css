@@ -48,7 +48,7 @@ ul, ol {
   font-family: "proxima-nova", sans-serif;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.4);
   border: 1px solid #c23d3d;
-  background: #db2424;
+  background: #a50303;
   -webkit-border-radius: 100px;
   -moz-border-radius: 100px;
   border-radius: 100px;
@@ -373,6 +373,12 @@ footer .aviso-legal a:hover {
   overflow: hidden;
 }
 
+#formulario {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+}
+
 #foto {
   height: 100%;
 }
@@ -394,12 +400,17 @@ form {
   justify-content: space-around;
   height: 70%;
 }
-form input, form textarea {
+form input, form textarea, form select {
+  font-size: 1.3em;
+  padding: 10px;
   border: none;
   border-bottom: 1px solid lightgrey;
 }
+form input[type="checkbox"] {
+  height: 20px;
+}
 form button {
-  color: white;
+  color: mintcream;
 }
 
 #presupuesto .hoja-presupuesto {
@@ -411,41 +422,46 @@ form button {
   padding: 10px;
   text-align: center;
   background-color: #002238;
-  color: snow;
+  color: mintcream;
 }
 #presupuesto .hoja-presupuesto h3 {
   color: #de673f;
   font-size: 1.3em;
 }
-#presupuesto .hoja-presupuesto .contact_form {
+#presupuesto .hoja-presupuesto .contact-form {
   margin-top: 20px;
 }
-#presupuesto .hoja-presupuesto .contact_form div ul:last-child {
+#presupuesto .hoja-presupuesto .contact-form div ul:last-child {
   margin-top: 20px;
 }
-#presupuesto .hoja-presupuesto .contact_form h4 {
-  color: #9ed8ff;
+#presupuesto .hoja-presupuesto .contact-form h4 {
+  color: #002238;
   margin-top: 10px;
-  border-bottom: 2px solid #9ed8ff;
+  border-bottom: 2px solid #002238;
   font-size: 1.5em;
+  padding: 5px 0;
 }
-#presupuesto .hoja-presupuesto .contact_form input {
+#presupuesto .hoja-presupuesto .contact-form label {
+  color: #b1a9a9;
+  font-size: 1.3em;
+}
+#presupuesto .hoja-presupuesto .contact-form input, #presupuesto .hoja-presupuesto .contact-form textarea {
   width: 80%;
   font-size: 18px;
   margin: 15px 0;
   border: none;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid #b1a9a9;
 }
-#presupuesto .hoja-presupuesto .contact_form .siscons {
+#presupuesto .hoja-presupuesto .contact-form .siscons {
   margin-top: 10px;
   display: flex;
   justify-content: space-around;
 }
-#presupuesto .hoja-presupuesto .contact_form .siscons li {
+#presupuesto .hoja-presupuesto .contact-form .siscons li {
   display: flex;
   align-items: center;
 }
-#presupuesto .hoja-presupuesto .contact_form .siscons li input {
+#presupuesto .hoja-presupuesto .contact-form .siscons li input {
   width: 30px;
   margin: 0 10px;
 }

@@ -10,6 +10,24 @@
 
 @media screen and (max-width: 768px) {
 
+/*FORMULARIO DE CONTACTO*/
+
+	.contacto{
+		width: 100%;
+	}
+	#formulario, #presupuesto{
+		height: 100%;
+		margin-top: 1.1em;
+	}
+	#formulario h2{
+		font-size: 1.2em;
+	}
+	#formulario input, #formulario textarea{
+		font-size: 1.5em;
+	}
+	#formulario #foto{
+		display: none;
+	}
 	#presupuesto #mobil{
 		display: none;
 	}
@@ -78,6 +96,49 @@
 		display: none;
 	}
 
+/*FORMULARIO DE PRESUPUESTO*/
+	#presupuesto{
+		margin: 0;
+	}
+	#presupuesto .hoja-presupuesto{
+		width: 100%;
+	}
+	#presupuesto .hoja-presupuesto h2{
+		font-size: 2em;
+	}
+	#presupuesto .hoja-presupuesto h3{
+		font-size: 1em;
+	}
+	#presupuesto .contact-form{
+		margin-top: 0;
+	}
+	#presupuesto .contact-form ul{
+		padding-left: 0;
+	}
+	#presupuesto .contact-form .siscons{
+		flex-direction: column;
+		
+	}
+
+
+/*FORMULARIO DE CONTACTO*/
+	.contacto{
+		width: 100%;
+	}
+	#formulario{
+		height: 100%;
+		margin-top: 1.1em;
+	}
+	#formulario h2{
+		font-size: 1.2em;
+	}
+	#formulario input, #formulario textarea{
+		font-size: 1.5em;
+	}
+	#formulario #foto{
+		display: none;
+	}
+
 	#presupuesto h1{
 		font-size: 2.2em;
 		text-align: center;
@@ -95,6 +156,7 @@
 	#garantia #texto-garantia{
 		flex-direction: column;
 	}
+/*SECCION SERVICIOS*/
 
 	#box-servicios .secciones{
 		width: 100%;
@@ -107,6 +169,8 @@
 		display: none;
 }
 
+/*SECCION LINEPOOL*/
+
 	#linepool #contenedor-linepool{
 		background-size: cover;
 		justify-content: center;
@@ -117,6 +181,8 @@
 	#linepool #contenedor-linepool #texto-linepool{
 	width: 90%;
 }
+
+/*SECCION MUNDOLINE*/
 
 	#mundoline{
 		flex-direction: column;
@@ -132,6 +198,8 @@
 		width: 100%;
 	}
 
+/*FOOTER*/
+
  #menu-footer{
 	 display: none;
  }
@@ -141,4 +209,3 @@
  }
 
 }
-
