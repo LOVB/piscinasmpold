@@ -1,24 +1,13 @@
 #obra article {
   display: -webkit-flex;
   display: -ms-flex;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 #obra article .foto {
   display: -webkit-flex;
   display: -ms-flex;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
   align-items: center;
 }
 #obra article .foto h3 {
@@ -29,20 +18,9 @@
   margin-left: 1.5em;
   display: -webkit-flex;
   display: -ms-flex;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  -webkit-align-content: center;
-  -ms-flex-line-pack: center;
   align-content: center;
 }
 
@@ -53,8 +31,6 @@
   width: 100%;
   display: -webkit-flex;
   display: -ms-flex;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 #exteriores .articulos-exteriores .texto {
@@ -62,16 +38,8 @@
   background-color: #00233b;
   display: -webkit-flex;
   display: -ms-flex;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
   align-items: center;
 }
 #exteriores .articulos-exteriores .texto h3 {
@@ -83,12 +51,21 @@
   width: 85%;
   display: -webkit-flex;
   display: -ms-flex;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 #exteriores .articulos-exteriores .imagenes img {
   width: 20%;
   display: block;
   padding: 5px;
+}
+
+#equipamiento article h3 {
+  text-align: center;
+}
+#equipamiento article ul {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: space-around;
+  padding: 0;
 }

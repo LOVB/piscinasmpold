@@ -77,3 +77,16 @@ $azulfooter: #296187;
     }
   }
 }
+
+#equipamiento article{
+  h3{
+    text-align: center;
+  }
+  ul{
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+  }
+}

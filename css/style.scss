@@ -8,6 +8,8 @@ $azulfooter:  lighten($azuloscuro, 30%);
 $blanco: hsl(149, 100%, 98%);
 $gris: #B1A9A9;
 
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700');
+
 @mixin center {
   display: flex;
   justify-content: center;
@@ -54,6 +56,8 @@ html {
 h1,h2,h3,h4,h5,h6 {
   font-family: 'Roboto Slab', sans-serif;
   color: $azuloscuro;
+  margin: 0px;
+  padding: 0px;
 }
 
 h2 {
@@ -133,6 +137,7 @@ header {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  margin-top: 1em;
   #logo {
     width: 30%;
     @include center;
@@ -161,6 +166,7 @@ header {
     nav{
       font-family: "Poppins";
       font-size: 1.5em;
+      margin-top: 10px;
       width: 100%;
       z-index: 100;
       & ul {
@@ -280,7 +286,6 @@ header {
       padding: 0 1.2em;
       h3{
         font-size: 1.7em;
-        margin: 2%;
         text-align: center;
       }
       img{
