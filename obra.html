@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="css/stylepiscinas.css">
     <link rel="stylesheet" href="css/responsive.css"/>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
 
 </head>
 <body>
@@ -59,7 +60,36 @@
       <h2>DESCRIPCIÓN</h2>
       <article>
         <div class="foto">
-          <img src="img/hormigon.jpg" alt="piscina de hormigón">
+          <!-- SLIDER -->
+          <div id="container" class="cf">
+        		<div id="main-slider">
+              <section class="slider">
+                <div class="flexslider carousel">
+                  <ul class="slides">
+                    <li>
+          	    	    <img src="img/slider/slide1.jpg" />
+          	    		</li>
+          	    		<li>
+          	    	    <img src="img/slider/slide2.jpg" />
+          	    		</li>
+          	    		<li>
+          	    	    <img src="img/slider/slide3.jpg" />
+          	    		</li>
+          	    		<li>
+          	    	    <img src="img/slider/slide4.jpg" />
+          	    		</li>
+          	    		<li>
+          	    	    <img src="img/slider/slide5.jpg" />
+          	    		</li>
+          	    		<li>
+          	    	    <img src="img/slider/slide6.jpg" />
+          	    		</li>
+                  </ul>
+                </div>
+              </section>
+            </div>
+          </div>
+          <!-- FIN SLIDER -->
         </div>
         <div class="texto">
           <p>Entre otras ventajas, las piscinas de hormigón gunitado o proyectado presentan una mayor resistencia por metro cuadrado, merced a la aplicación del hormigón H-400 (400 KG/m3).</p>
@@ -231,8 +261,29 @@
 
   </div> <!-- fin del contenedor general -->
 
-  <!-- sccripts de jquery -->
-  <script src="http://code.jquery.com/jquery-latest.min.js"></script>
-  <script src="js/main.js"></script>
+    <!-- jQuery -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.min.js">\x3C/script>')</script>
+
+  <!-- FlexSlider -->
+  <script defer src="js/jquery.flexslider.js"></script>
+
+  <script type="text/javascript">
+    $(function(){
+      SyntaxHighlighter.all();
+    });
+    $(window).load(function(){
+      $('.flexslider').flexslider({
+        animation: "slide",
+        animationLoop: true,
+        itemWidth: 600,
+        itemMargin: 5,
+        pausePlay: true,
+        start: function(slider){
+          $('body').removeClass('loading');
+        }
+      });
+    });
+  </script>
 </body>
 </html>
