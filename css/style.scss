@@ -154,6 +154,7 @@ header {
       h5{
       color: rgba(0, 0, 0, .6);
       padding: 0 2em;
+      font-weight: 200;
         a{
           color: rgba(0, 0, 0, .6);
           &:hover{
@@ -166,6 +167,7 @@ header {
     nav{
       font-family: "Poppins";
       font-size: 1.5em;
+      font-weight: 200;
       margin-top: 10px;
       width: 100%;
       z-index: 100;

@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Piscinas MP</title>
+    <title>Piscinas MP | Construcción de piscinas</title>
     <meta name="author" content="Luis V Ballesteros"/>
     <meta name="owner" content="Grupo Mundoline">
     <meta name="robots" content="index, follow"/>
@@ -12,14 +12,14 @@
     <link rel="shortcut icon" href="favicon.png"/>
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/5.0.0/normalize.css"/>
     <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
-    <link rel="stylesheet" href="css/icomoon.css">
-    <link rel="stylesheet" href="css/contacto.css">
     <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/stylepiscinas.css">
     <link rel="stylesheet" href="css/responsive.css"/>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
-</head>
 
+</head>
 <body>
+
   <div id="main"><!-- contenedor general -->
 
     <header><!-- Cabecera con logo y dos menus -->
@@ -45,50 +45,24 @@
         </nav>
       </div>
     </header>    <!--fin de cabezera-->
-
-    <div id="presupuesto" class="contenedor">
-      <div class="hoja-presupuesto" id="texto">
-        <h2>Solicitud de presupuesto</h2>
-        <h3>Dinos todas las características que necesites y te responderemos con un presupuesto adaptado a tus necesidades.</h3>
-        <form class="contact-form" action="#" id="contact_form" runat="server">
-          <div>
-            <ul>
-              <h4>Datos personales</h4>
-              <li><input type="text" placeholder="Nombre" required /> </li>
-              <li><input type="email" name="email" placeholder="info@example.com" required /></li>
-              <li><input type="tel" name="telephone" placeholder="Teléfono"/></li>
-              <li><input type="text" name="location" placeholder="Localidad"></li>
-              <li>
-                <h4>Tipo de picina</h4>
-                <ul class="siscons">
-                  <li><label for="checkbox">Hormigón </label><input type="checkbox" /></li>
-                  <li><label for="checkbox">Acero </label><input type="checkbox" /></li>
-                  <li><label for="checkbox">Madera </label><input type="checkbox" /></li>
-                  <li><label for="select">Tamaño aprox. </label><select name="medidas">
-                    <option value="5">5x3</option>
-                    <option value="6">6x3</option>
-                    <option value="7">7x4</option>
-                    <option value="8">8x4</option>
-                    <option value="10">10x5</option>
-                    <option value="12">12x6</option>
-                    <option value="superior">Superior</option>
-                  </select></li>
-                </ul>
-              </li>
-              <h4>Deja tu descripción</h4>
-              <li> <label for="message"></label> <textarea name="message" placeholder="Descripción" required></textarea> </li>
-            </ul>
-            <button class="submit boton" type="submit">Enviar presupuesto</button>
-          </div>
-        </form>
+    <div id="manuales" class="contenedor">
+      <h2>MANUALES</h2>
+      <div class="manual">
+        <figure>
+          <img src="img/mantenimiento.jpg" alt="">
+        </figure>
+        <div class="descripcion">
+          <h3>Manual Mantenimiento</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam nesciunt dolor voluptatibus, rerum. Explicabo, consequuntur.</p>
+          <a class="boton mini" href="pdf/mantenimiento.pdf">Descargar aqui</a>
+        </div>
       </div>
     </div>
-
     <!-- pie de página -->
     <footer class="contenedor">
       <nav id="menu-footer">
         <ul>
-          <li><a href="#">PISCINAS PRIVADAS</a></li>
+          <li><a href="piscinas.html">PISCINAS PRIVADAS</a></li>
           <li><a href="#">PISCINAS PUBLICAS</a></li>
           <li><a href="#">SERVICIOS</a></li>
           <li><a href="#">CONTACTO</a></li>
@@ -110,10 +84,8 @@
 
   </div> <!-- fin del contenedor general -->
 
-
-
-<!-- sccripts de jquery -->
-<script src="http://code.jquery.com/jquery-latest.min.js"></script>
-<script src="js/main.js"></script>
+  <!-- sccripts de jquery -->
+  <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>
