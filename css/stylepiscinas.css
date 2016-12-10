@@ -103,6 +103,15 @@
   text-align: center;
 }
 
+#presupuesto div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+#presupuesto div p {
+  font-size: 1.5em;
+}
+
 /* --Clearfix */
 .cf:before,
 .cf:after {
