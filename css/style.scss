@@ -1,4 +1,4 @@
-$texto: hsl(0, 0%, 20%);
+$texto: hsl(0, 0%, 36%);
 $azuloscuro: hsl(204, 100%, 11%);
 $rojo: hsl(15, 71%, 56%);
 $amarillo: hsl(39, 87%, 57%);
@@ -9,6 +9,7 @@ $blanco: hsl(149, 100%, 98%);
 $gris: #B1A9A9;
 
 @import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700');
+
 
 @mixin center {
   display: flex;
@@ -133,11 +134,11 @@ body {
 
 // ESTILOS DE LA CABECERA
 header {
-  width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   margin-top: 1em;
+  width: 100%;
   #logo {
     width: 30%;
     @include center;
@@ -184,16 +185,18 @@ header {
         position: absolute;
         padding: 0;
         background-color: $azuloscuro;
+        // border-radius: 20px;
         transition: all .3s;
       }
       & li a{
 				color: $azuloscuro;
 				text-decoration:none;
-				padding:10px 12px;
+				padding:5px 12px;
 				display:block;
         transition: all .3s;
         &:hover{
           background-color: $azuloscuro;
+          border-radius: 20px;
           color: $blanco;
         }
       }
@@ -215,6 +218,7 @@ header {
   h1{
     position: absolute;
     color: $blanco;
+    text-shadow: 0px 2px 8px dimgray;
     top: 0;
     left: 2em;
     font-size: 3em;
@@ -287,7 +291,7 @@ header {
       flex-direction: column;
       padding: 0 1.2em;
       h3{
-        font-size: 1.7em;
+        font-size: 1.5em;
         text-align: center;
       }
       img{

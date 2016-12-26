@@ -24,7 +24,7 @@
 
     <header><!-- Cabecera con logo y dos menus -->
       <div id="logo">
-        <a href="index.html"><img src="img/piscinas_mp.png" alt="logo piscinas mp"></a>
+        <a href="index.html"><img src="img/logos/piscinas_mp.png" alt="logo piscinas mp"></a>
       </div>
       <div id="menus">
         <div id="submenu">
@@ -60,20 +60,32 @@
               <li><input type="text" name="location" placeholder="Localidad"></li>
               <li>
                 <h4>Tipo de picina</h4>
-                <ul class="siscons">
-                  <li><label for="checkbox">Hormigón </label><input type="checkbox" /></li>
-                  <li><label for="checkbox">Acero </label><input type="checkbox" /></li>
-                  <li><label for="checkbox">Madera </label><input type="checkbox" /></li>
-                  <li><label for="select">Tamaño aprox. </label><select name="medidas">
-                    <option value="5">5x3</option>
-                    <option value="6">6x3</option>
-                    <option value="7">7x4</option>
-                    <option value="8">8x4</option>
-                    <option value="10">10x5</option>
-                    <option value="12">12x6</option>
-                    <option value="superior">Superior</option>
-                  </select></li>
-                </ul>
+                <div class="siscons">
+                  <p>
+                    <input type="checkbox" />
+                    <label for="checkbox">Hormigón </label>
+                  </p>
+                  <p>
+                    <input type="checkbox" />
+                    <label for="checkbox">Acero </label>
+                  </p>
+                  <p>
+                    <input type="checkbox" />
+                    <label for="checkbox">Madera </label>
+                  </p>
+                  <p>
+                    <label for="select">Tamaño aprox. </label>
+                    <select name="medidas">
+                      <option value="5">5x3</option>
+                      <option value="6">6x3</option>
+                      <option value="7">7x4</option>
+                      <option value="8">8x4</option>
+                      <option value="10">10x5</option>
+                      <option value="12">12x6</option>
+                      <option value="superior">Superior</option>
+                    </select>
+                  </p>
+                </div>
               </li>
               <h4>Deja tu descripción</h4>
               <li> <label for="message"></label> <textarea name="message" placeholder="Descripción" required></textarea> </li>

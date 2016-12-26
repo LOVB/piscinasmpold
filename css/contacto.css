@@ -25,7 +25,7 @@ h4 {
 
 p, span {
   font-family: "Roboto", sans-serif;
-  color: #333333;
+  color: #5c5c5c;
 }
 
 a {
@@ -101,11 +101,11 @@ body {
 }
 
 header {
-  width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   margin-top: 1em;
+  width: 100%;
 }
 header #logo {
   width: 30%;
@@ -159,12 +159,13 @@ header #menus nav li ul {
 header #menus nav li a {
   color: #002238;
   text-decoration: none;
-  padding: 10px 12px;
+  padding: 5px 12px;
   display: block;
   transition: all .3s;
 }
 header #menus nav li a:hover {
   background-color: #002238;
+  border-radius: 20px;
   color: mintcream;
 }
 header #menus nav li ul li {
@@ -181,6 +182,7 @@ header #menus nav li ul li a {
 #presupuesto h1 {
   position: absolute;
   color: mintcream;
+  text-shadow: 0px 2px 8px dimgray;
   top: 0;
   left: 2em;
   font-size: 3em;
@@ -250,7 +252,7 @@ header #menus nav li ul li a {
   padding: 0 1.2em;
 }
 #box-servicios .secciones h3 {
-  font-size: 1.7em;
+  font-size: 1.5em;
   text-align: center;
 }
 #box-servicios .secciones img {
@@ -459,15 +461,40 @@ form button {
   border-bottom: 1px solid #b1a9a9;
 }
 #presupuesto .hoja-presupuesto .contact-form .siscons {
-  margin-top: 10px;
   display: flex;
   justify-content: space-around;
 }
-#presupuesto .hoja-presupuesto .contact-form .siscons li {
-  display: flex;
-  align-items: center;
+#presupuesto .hoja-presupuesto .contact-form .siscons p {
+  margin: 20px;
+  position: relative;
 }
-#presupuesto .hoja-presupuesto .contact-form .siscons li input {
-  width: 30px;
-  margin: 0 10px;
+#presupuesto .hoja-presupuesto .contact-form .siscons input {
+  font-size: 20px;
+  opacity: 0;
+  cursor: pointer;
+  position: absolute;
+  margin: 5px 0;
+  z-index: 99;
+}
+#presupuesto .hoja-presupuesto .contact-form .siscons [type="checkbox"] + label {
+  color: #b1a9a9;
+  position: relative;
+  padding-left: 20px;
+}
+#presupuesto .hoja-presupuesto .contact-form .siscons [type="checkbox"] + label:before {
+  content: '';
+  position: absolute;
+  top: 0px;
+  left: -5px;
+  width: 20px;
+  height: 20px;
+  border: 1px solid silver;
+  z-index: -10;
+  cursor: pointer;
+}
+#presupuesto .hoja-presupuesto .contact-form .siscons [type="checkbox"]:checked + label:before {
+  font-family: FontAwesome;
+  content: '\f00c';
+  font-size: 20px;
+  /*   background-color: tomato; */
 }

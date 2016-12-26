@@ -94,18 +94,48 @@ form{
         border-bottom: 1px solid $gris;
       }
       .siscons{
-        margin-top: 10px;
         display: flex;
         justify-content: space-around;
-        li{
-          display: flex;
-          align-items: center;
-          input{
-            width: 30px;
-            margin: 0 10px;
-          }
+
+        p{
+          margin: 20px;
+          position: relative;
+        }
+
+        input{
+          font-size: 20px;
+          opacity: 0;
+          cursor: pointer;
+          position: absolute;
+          margin: 5px 0;
+          z-index: 99;
+        }
+
+        [type="checkbox"] + label{
+          color: $gris;
+          position: relative;
+          padding-left: 20px;
+        }
+
+        [type="checkbox"] + label:before{
+          content:'';
+          position:absolute;
+          top: 0px;
+          left: -5px;
+          width: 20px;
+          height: 20px;
+          border: 1px solid silver;
+          z-index: -10;
+          cursor: pointer;
+        }
+
+        [type="checkbox"]:checked + label:before{
+          font-family: FontAwesome;
+          content:'\f00c';
+          font-size: 20px;
+        /*   background-color: tomato; */
         }
       }
+     }
     }
   }
-}

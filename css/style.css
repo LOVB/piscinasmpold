@@ -25,7 +25,7 @@ h4 {
 
 p, span {
   font-family: "Roboto", sans-serif;
-  color: #333333;
+  color: #5c5c5c;
 }
 
 a {
@@ -106,7 +106,6 @@ body {
 }
 
 header {
-  width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -119,6 +118,7 @@ header {
   -ms-flex-pack: justify;
   justify-content: space-between;
   margin-top: 1em;
+  width: 100%;
 }
 header #logo {
   width: 30%;
@@ -197,13 +197,14 @@ header #menus nav li ul {
 header #menus nav li a {
   color: #002238;
   text-decoration: none;
-  padding: 10px 12px;
+  padding: 5px 12px;
   display: block;
   -webkit-transition: all .3s;
   transition: all .3s;
 }
 header #menus nav li a:hover {
   background-color: #002238;
+  border-radius: 20px;
   color: mintcream;
 }
 header #menus nav li ul li {
@@ -220,6 +221,7 @@ header #menus nav li ul li a {
 #presupuesto h1 {
   position: absolute;
   color: mintcream;
+  text-shadow: 0px 2px 8px dimgray;
   top: 0;
   left: 2em;
   font-size: 3em;
@@ -322,7 +324,7 @@ header #menus nav li ul li a {
   padding: 0 1.2em;
 }
 #box-servicios .secciones h3 {
-  font-size: 1.7em;
+  font-size: 1.5em;
   text-align: center;
 }
 #box-servicios .secciones img {
