@@ -4,7 +4,6 @@ $rojo: #df6940;
 $amarillo: #f2b234;
 $verde: #87a93c;
 $azul: #0378ad;
-$azulfooter: #296187;
 
 @import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700');
 
@@ -101,6 +100,8 @@ $azulfooter: #296187;
 #equipamiento article{
   h3{
     text-align: center;
+    background-color: $azul;
+    color: snow;
   }
   ul{
     display: -webkit-flex;
@@ -141,9 +142,9 @@ $azulfooter: #296187;
   display: inline-block;
   }
   p{
-    margin: 0 20px;
+    margin: 20px;
+    font-size: 1.2em;
   }
-
   input{
     font-size: 20px;
     margin: -5px;
@@ -173,7 +174,6 @@ $azulfooter: #296187;
     font-family: FontAwesome;
     content:'\f00c';
     font-size: 20px;
-  /*   background-color: tomato; */
   }
 }
 

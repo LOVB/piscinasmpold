@@ -439,8 +439,13 @@ form button {
 #presupuesto .hoja-presupuesto .contact-form {
   margin-top: 20px;
 }
-#presupuesto .hoja-presupuesto .contact-form div ul:last-child {
-  margin-top: 20px;
+#presupuesto .hoja-presupuesto .contact-form div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+#presupuesto .hoja-presupuesto .contact-form div ul {
+  width: 100%;
 }
 #presupuesto .hoja-presupuesto .contact-form h4 {
   color: #002238;
@@ -454,7 +459,7 @@ form button {
   font-size: 1.3em;
 }
 #presupuesto .hoja-presupuesto .contact-form input, #presupuesto .hoja-presupuesto .contact-form textarea {
-  width: 80%;
+  width: 100%;
   font-size: 18px;
   margin: 15px 0;
   border: none;
@@ -463,6 +468,7 @@ form button {
 #presupuesto .hoja-presupuesto .contact-form .siscons {
   display: flex;
   justify-content: space-around;
+  align-items: center;
 }
 #presupuesto .hoja-presupuesto .contact-form .siscons p {
   margin: 20px;
@@ -496,5 +502,5 @@ form button {
   font-family: FontAwesome;
   content: '\f00c';
   font-size: 20px;
-  /*   background-color: tomato; */
+  color: #002238;
 }

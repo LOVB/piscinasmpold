@@ -72,8 +72,16 @@ form{
     }
     .contact-form{
       margin-top: 20px;
-      div ul:last-child{
-        margin-top: 20px;
+      div {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        // ul:last-child{
+        // margin-top: 20px;
+        // }
+        ul{
+          width: 100%;
+        }
       }
       h4{
         color: $azuloscuro;
@@ -87,7 +95,7 @@ form{
         font-size: 1.3em;
       }
       input, textarea {
-        width: 80%;
+        width: 100%;
         font-size: 18px;
         margin: 15px 0;
         border: none;
@@ -96,12 +104,11 @@ form{
       .siscons{
         display: flex;
         justify-content: space-around;
-
+        align-items: center;
         p{
           margin: 20px;
           position: relative;
         }
-
         input{
           font-size: 20px;
           opacity: 0;
@@ -133,7 +140,7 @@ form{
           font-family: FontAwesome;
           content:'\f00c';
           font-size: 20px;
-        /*   background-color: tomato; */
+          color: $azuloscuro;
         }
       }
      }
