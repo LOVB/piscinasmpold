@@ -82,9 +82,16 @@
 
 }
 
-/* ---> Medida Smarthphone <--- */
+/* --->
+        Medida Smarthphone
+                          <--- */
+
 
 @media screen and (max-width: 480px) {
+
+  h2{
+    margin: 0;
+  }
 
 	header #logo, header #menus{
 		width: 100%;
@@ -104,6 +111,9 @@
 	#presupuesto{
 		margin: 0;
 	}
+  #presupuesto .presupuesto{
+    right: 0;
+  }
 	#presupuesto .hoja-presupuesto{
 		width: 100%;
 	}
@@ -121,9 +131,15 @@
 	}
 	#presupuesto .contact-form .siscons{
 		flex-direction: column;
-
 	}
 
+/*SECCION GARANTIA*/
+
+#sello-garantia>img{
+  height: 100%;
+  width: 25%;
+  padding: 0 5px;
+}
 
 /*FORMULARIO DE CONTACTO*/
 	.contacto{
@@ -160,6 +176,7 @@
 	#garantia #texto-garantia{
 		flex-direction: column;
 	}
+
 /*SECCION SERVICIOS*/
 
 	#box-servicios .secciones{
@@ -185,6 +202,9 @@
 	#linepool #contenedor-linepool #texto-linepool{
 	width: 90%;
 }
+	#linepool #contenedor-linepool #texto-linepool img{
+	width: 100%;
+}
 
 /*SECCION MUNDOLINE*/
 
@@ -201,6 +221,10 @@
 	#mundoline #texto {
 		width: 100%;
 	}
+
+  #mundoline #texto a{
+    font-size: .9em;
+  }
 
 /*FOOTER*/
 
