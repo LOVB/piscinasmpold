@@ -9,23 +9,23 @@
   font-weight: normal;
   font-style: normal;
 }
-#obra article {
+#obra article, #reformas article {
   display: -webkit-flex;
   display: -ms-flex;
   display: flex;
 }
-#obra article .foto {
+#obra article .foto, #reformas article .foto {
   display: -webkit-flex;
   display: -ms-flex;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-#obra article .foto h3 {
+#obra article .foto h3, #reformas article .foto h3 {
   font-size: 2em;
   color: #0378ad;
 }
-#obra article .texto {
+#obra article .texto, #reformas article .texto {
   margin-left: 1.5em;
   display: -webkit-flex;
   display: -ms-flex;
@@ -34,7 +34,7 @@
   justify-content: center;
   align-content: center;
 }
-#obra article .texto p {
+#obra article .texto p, #reformas article .texto p {
   margin-top: 0;
 }
 
@@ -72,6 +72,23 @@
   height: 100%;
   display: block;
   padding: 5px;
+}
+
+#servicios #box-servicios .liner {
+  width: 100%;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  flex-direction: row;
+}
+#servicios #box-servicios .liner figure {
+  width: 20%;
+}
+#servicios #box-servicios .liner figure img {
+  margin-bottom: 0;
+}
+#servicios #box-servicios .liner div {
+  width: 80%;
 }
 
 #equipamiento article h3 {

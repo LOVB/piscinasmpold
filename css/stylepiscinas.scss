@@ -28,7 +28,7 @@ $azul: #0378ad;
 }
 
 // SECCION DE OBRA
-#obra{
+#obra, #reformas{
   article{
     display: -webkit-flex;
     display: -ms-flex;
@@ -94,6 +94,23 @@ $azul: #0378ad;
         padding: 5px;
       }
     }
+  }
+}
+
+#servicios #box-servicios .liner{
+  width: 100%;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  flex-direction: row;
+  figure{
+    width: 20%;
+    img{
+      margin-bottom: 0;
+    }
+  }
+  div{
+    width: 80%;
   }
 }
 

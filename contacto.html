@@ -34,10 +34,10 @@
             <li><a href="#">PISCINAS</a>
               <ul>
                 <li><a href="piscinas-privadas.html">PISCINAS PRIVADAS</a></li>
-                <li><a href="#">PISCINAS PUBLICAS</a></li>
+                <li><a href="piscinas-publicas.html">PISCINAS PUBLICAS</a></li>
               </ul>
             </li>
-            <li><a href="#">SERVICIOS</a></li>
+            <li><a href="servicios.html">SERVICIOS</a></li>
             <li><a href="manuales.html">MANUALES</a></li>
             <li><a href="contacto.html">CONTACTO</a></li>
           </ul>
@@ -52,13 +52,13 @@
       <div class="contacto" id="texto">
         <h2>Rellena nuestro formulario de contacto.</h2>
         <p>Pregúntanos todas las dudas que tengas. Estaremos encantados de contestarte.</p>
-        <form class="contact-form" action="#" id="contact_form" runat="server">
-              <span class="required_notification">* Datos requeridos</span>
-              <input type="text" required placeholder="Nombre"/>
-              <input type="email" name="email" placeholder="email" required />
-              <input type="tel" name="telephone" placeholder="Teléfono"/>
-              <textarea name="message" placeholder="Escriba aqui..."></textarea>
-              <button class="submit boton" type="submit">Enviar mensaje</button>
+        <form class="contact-form" method="post" action="contacto.php" id="contact_form" runat="server">
+          <span class="required_notification">* Datos requeridos</span>
+          <input type="text" name="nombre" placeholder="*Nombre" required/>
+          <input type="email" name="email" placeholder="*email" required />
+          <input type="tel" name="telefono" placeholder="Teléfono"/>
+          <textarea name="mensaje" placeholder="Escriba aqui..."></textarea>
+          <input class="submit boton" type="submit"></input>
         </form>
       </div>
     </div>
@@ -69,7 +69,7 @@
         <ul>
           <li><a href="piscinas.html">PISCINAS PRIVADAS</a></li>
           <li><a href="piscinas-publicas.html">PISCINAS PUBLICAS</a></li>
-          <li><a href="#">SERVICIOS</a></li>
+          <li><a href="servicios.html">SERVICIOS</a></li>
           <li><a href="contacto.html">CONTACTO</a></li>
         </ul>
       </nav>
