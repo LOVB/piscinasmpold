@@ -32,6 +32,10 @@
   padding: 0 20px;
 }
 
+fieldset{
+  border: none;
+}
+
 form{
   display: -webkit-flex;
   display: -ms-flex;
@@ -76,9 +80,6 @@ form{
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        // ul:last-child{
-        // margin-top: 20px;
-        // }
         ul{
           width: 100%;
         }
@@ -96,10 +97,13 @@ form{
       }
       input, textarea {
         width: 100%;
-        font-size: 18px;
+        // font-size: 18px;
         margin: 15px 0;
         border: none;
         border-bottom: 1px solid $gris;
+      }
+      .submit {
+        width: 50%;
       }
       .siscons{
         display: flex;

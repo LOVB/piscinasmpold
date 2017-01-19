@@ -400,6 +400,10 @@ footer .aviso-legal a:hover {
   padding: 0 20px;
 }
 
+fieldset {
+  border: none;
+}
+
 form {
   display: -webkit-flex;
   display: -ms-flex;
@@ -460,10 +464,12 @@ form button {
 }
 #presupuesto .hoja-presupuesto .contact-form input, #presupuesto .hoja-presupuesto .contact-form textarea {
   width: 100%;
-  font-size: 18px;
   margin: 15px 0;
   border: none;
   border-bottom: 1px solid #b1a9a9;
+}
+#presupuesto .hoja-presupuesto .contact-form .submit {
+  width: 50%;
 }
 #presupuesto .hoja-presupuesto .contact-form .siscons {
   display: flex;
