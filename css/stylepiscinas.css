@@ -9,23 +9,23 @@
   font-weight: normal;
   font-style: normal;
 }
-#obra article, #reformas article {
+#obra article, #presupuesto article {
   display: -webkit-flex;
   display: -ms-flex;
   display: flex;
 }
-#obra article .foto, #reformas article .foto {
+#obra article .foto, #presupuesto article .foto {
   display: -webkit-flex;
   display: -ms-flex;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-#obra article .foto h3, #reformas article .foto h3 {
+#obra article .foto h3, #presupuesto article .foto h3 {
   font-size: 2em;
   color: #0378ad;
 }
-#obra article .texto, #reformas article .texto {
+#obra article .texto, #presupuesto article .texto {
   margin-left: 1.5em;
   display: -webkit-flex;
   display: -ms-flex;
@@ -34,7 +34,7 @@
   justify-content: center;
   align-content: center;
 }
-#obra article .texto p, #reformas article .texto p {
+#obra article .texto p, #presupuesto article .texto p {
   margin-top: 0;
 }
 
