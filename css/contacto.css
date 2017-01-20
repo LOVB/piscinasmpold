@@ -165,7 +165,6 @@ header #menus nav li a {
 }
 header #menus nav li a:hover {
   background-color: #002238;
-  border-radius: 20px;
   color: mintcream;
 }
 header #menus nav li ul li {
@@ -470,6 +469,7 @@ form button {
 }
 #presupuesto .hoja-presupuesto .contact-form .submit {
   width: 50%;
+  margin: auto;
 }
 #presupuesto .hoja-presupuesto .contact-form .siscons {
   display: flex;
