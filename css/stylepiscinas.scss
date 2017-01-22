@@ -151,6 +151,8 @@ $azul: #0378ad;
     text-align: center;
   }
 }
+
+// HOJA PRESUPUESTO
 #presupuesto div {
   display: flex;
   flex-wrap: wrap;
@@ -225,15 +227,11 @@ box-shadow: inset 1px 1px 0 #fff, inset -1px -1px 0 #fff;
 
 .slider { margin: 20px 0 10px!important;}
 
-
-
 /* Layout
 ***********************/
 #main-slider {width: 400px; overflow: hidden;}
 
-
 // SECCION MANUALES
-
 #manuales .manual{
   display: flex;
   figure{
@@ -242,4 +240,9 @@ box-shadow: inset 1px 1px 0 #fff, inset -1px -1px 0 #fff;
   .descripcion{
     margin: 0 10px;
   }
+}
+
+// HOJA SERVICIOS
+.contenedor > article{
+  display: flex;
 }

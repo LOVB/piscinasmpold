@@ -51,50 +51,53 @@
         <h2>Solicitud de presupuesto</h2>
         <h3>Dinos todas las características que necesites y te responderemos con un presupuesto adaptado a tus necesidades. <small>* Campos obligatorios.</small></h3>
         <form class="contact-form" method="post" action="presupuesto.php" id="contact_form" runat="server">
-          <div>
-            <ul>
+
+            <fieldset>
               <h4>Datos personales</h4>
-              <li><input type="text" name="nombre" placeholder="* Nombre" required /></li>
-              <li><input type="email" name="email" placeholder="* Correo Electrónico" required /></li>
-              <li><input type="tel" name="telefono" placeholder="* Teléfono" required/></li>
-              <li><input type="text" name="localidad" placeholder="Localidad"></li>
-              <li>
-                <h4>Tipo de picina</h4>
-                <div class="siscons">
-                  <p>
-                    <input type="checkbox" name="tipo" value="hormigon"/>
-                    <label for="checkbox">Hormigón </label>
-                  </p>
-                  <p>
-                    <input type="checkbox" name="tipo" value="acero"/>
-                    <label for="checkbox">Acero </label>
-                  </p>
-                  <p>
-                    <input type="checkbox" name="tipo" value="madera"/>
-                    <label for="checkbox">Madera </label>
-                  </p>
-                  <p>
-                    <label for="select">Tamaño aprox. </label>
-                    <select name="medidas">
-                      <option value="5x3">5x3</option>
-                      <option value="6x3">6x3</option>
-                      <option value="7x4">7x4</option>
-                      <option value="8x4">8x4</option>
-                      <option value="10x5">10x5</option>
-                      <option value="12x6">12x6</option>
-                      <option value="superior">Superior</option>
-                    </select>
-                  </p>
-                </div>
-              </li>
-              <li>
-                <h4>Deja tu descripción</h4>
-                <label for="message"></label>
-                <textarea name="mensaje" placeholder="Descripción" required></textarea>
-              </li>
-            </ul>
-            <button class="submit boton" type="submit">Enviar presupuesto</button>
-          </div>
+                <input type="text" name="nombre" placeholder="* Nombre" required />
+                <input type="email" name="email" placeholder="* Correo Electrónico" required />
+                <input type="tel" name="telefono" placeholder="* Teléfono" required/>
+                <input type="text" name="localidad" placeholder="Localidad">
+            </fieldset>
+
+            <fieldset>
+              <h4>Tipo de picina</h4>
+              <div class="siscons">
+                <p>
+                  <input type="checkbox" name="tipo" value="hormigon"/>
+                  <label for="checkbox">Hormigón </label>
+                </p>
+                <p>
+                  <input type="checkbox" name="tipo" value="acero"/>
+                  <label for="checkbox">Acero </label>
+                </p>
+                <p>
+                  <input type="checkbox" name="tipo" value="madera"/>
+                  <label for="checkbox">Madera </label>
+                </p>
+                <p>
+                  <label for="select">Tamaño aprox. </label>
+                  <select name="medidas">
+                    <option value="5x3">5x3</option>
+                    <option value="6x3">6x3</option>
+                    <option value="7x4">7x4</option>
+                    <option value="8x4">8x4</option>
+                    <option value="10x5">10x5</option>
+                    <option value="12x6">12x6</option>
+                    <option value="superior">Superior</option>
+                  </select>
+                </p>
+              </div>
+            </fieldset>
+
+            <fieldset>
+              <h4>Deja tu descripción</h4>
+              <label for="message"></label>
+              <textarea name="mensaje" placeholder="Descripción" required></textarea>
+            </fieldset>
+
+            <input class="submit boton" type="submit" value="ENVIAR PRESUPUESTO"></input>
+
         </form>
       </div>
     </div>

@@ -74,7 +74,6 @@ ul, ol {
 
 .mini {
   font-size: 1em;
-  width: 160px;
 }
 
 .texto-light {
@@ -165,7 +164,6 @@ header #menus nav li a {
 }
 header #menus nav li a:hover {
   background-color: #002238;
-  border-radius: 20px;
   color: mintcream;
 }
 header #menus nav li ul li {
@@ -247,8 +245,6 @@ header #menus nav li ul li a {
 }
 #box-servicios .secciones {
   width: 33%;
-  display: flex;
-  flex-direction: column;
   padding: 0 1.2em;
 }
 #box-servicios .secciones h3 {
@@ -258,11 +254,6 @@ header #menus nav li ul li a {
 #box-servicios .secciones img {
   width: 100%;
   margin-bottom: 20px;
-}
-#box-servicios .secciones .boton {
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 #linepool {
@@ -400,6 +391,10 @@ footer .aviso-legal a:hover {
   padding: 0 20px;
 }
 
+fieldset {
+  border: none;
+}
+
 form {
   display: -webkit-flex;
   display: -ms-flex;
@@ -460,10 +455,13 @@ form button {
 }
 #presupuesto .hoja-presupuesto .contact-form input, #presupuesto .hoja-presupuesto .contact-form textarea {
   width: 100%;
-  font-size: 18px;
   margin: 15px 0;
   border: none;
   border-bottom: 1px solid #b1a9a9;
+}
+#presupuesto .hoja-presupuesto .contact-form .submit {
+  width: 50%;
+  margin: auto;
 }
 #presupuesto .hoja-presupuesto .contact-form .siscons {
   display: flex;
