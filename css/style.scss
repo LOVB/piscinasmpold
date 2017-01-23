@@ -133,17 +133,6 @@ body {
   margin-top: 1.8em;
 }
 
-.contenedor > article{
-  display: flex;
-}
-
-.contenedor ul{
-  list-style-type: lower-latin;
-  li{
-    color: $texto;
-  }
-}
-
 // ESTILOS DE LA CABECERA
 header {
   display: flex;

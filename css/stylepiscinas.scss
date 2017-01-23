@@ -45,13 +45,8 @@ $azul: #0378ad;
       }
     }
     .texto{
-      margin-left: 1.5em;
-      display: -webkit-flex;
-      display: -ms-flex;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-content: center;
+      margin: 3em 0 0 2em;
+
       p{
         margin-top: 0;
       }
@@ -195,6 +190,24 @@ $azul: #0378ad;
     font-size: 20px;
   }
 }
+
+// HOJA SERVICOS
+.contenedor .servicios{
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+}
+
+// .contenedor > article{
+//   display: flex;
+// }
+
+// .contenedor ul{
+//   list-style-type: lower-latin;
+//   li{
+//     color: $texto;
+//   }
+// }
 
 //SLIDER
 

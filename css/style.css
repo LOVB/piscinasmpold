@@ -99,17 +99,6 @@ body {
   margin-top: 1.8em;
 }
 
-.contenedor > article {
-  display: flex;
-}
-
-.contenedor ul {
-  list-style-type: lower-latin;
-}
-.contenedor ul li {
-  color: #5c5c5c;
-}
-
 header {
   display: flex;
   flex-wrap: wrap;
