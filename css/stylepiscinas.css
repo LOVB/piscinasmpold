@@ -268,7 +268,3 @@
 #manuales .manual .descripcion {
   margin: 0 10px;
 }
-
-.contenedor > article {
-  display: flex;
-}

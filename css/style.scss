@@ -87,6 +87,7 @@ ul, ol{
   list-style: none;
 }
 
+
 .boton {
   @include style-button;
   font-size: 2em;
@@ -130,6 +131,17 @@ body {
 
 .contenedor{
   margin-top: 1.8em;
+}
+
+.contenedor > article{
+  display: flex;
+}
+
+.contenedor ul{
+  list-style-type: lower-latin;
+  li{
+    color: $texto;
+  }
 }
 
 // ESTILOS DE LA CABECERA
@@ -185,7 +197,6 @@ header {
         position: absolute;
         padding: 0;
         background-color: $azuloscuro;
-        // border-radius: 20px;
         transition: all .3s;
       }
       & li a{
@@ -193,6 +204,7 @@ header {
 				text-decoration:none;
 				padding:5px 12px;
 				display:block;
+        font-weight: 400;
         transition: all .3s;
         &:hover{
           background-color: $azuloscuro;
