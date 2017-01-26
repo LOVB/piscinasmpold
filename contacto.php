@@ -2,8 +2,8 @@
 if(isset($_POST['email'])) {
 
 // Debes editar las próximas dos líneas de código de acuerdo con tus preferencias
-$email_to = "marketing@grupomundoline.com";
-$email_subject = "Contacto desde el sitio web";
+$email_to = "info@grupomundoline.com, Marketing <marketing@grupomundoline.com>";
+$email_subject = "Contacto piscinasmp";
 
 // Aquí se deberían validar los datos ingresados por el usuario
 if(!isset($_POST['nombre']) ||
