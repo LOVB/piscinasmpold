@@ -13,13 +13,12 @@
     <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/5.0.0/normalize.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/cookies.css">
     <link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
 </head>
 
 <body>
-
-  <?php include_once("analyticstracking.php") ?>
 
   <div id="main"><!-- contenedor general -->
 
@@ -163,11 +162,63 @@
       </article>
     </footer>
 
+    <!-- POLITICA DE COOKIES -->
+    <div id="barraaceptacion" style="display: block;">
+      <div class="inner">
+        <p>Solicitamos su permiso para obtener datos estadísticos de su navegación en esta web, en cumplimiento del Real
+        Decreto-ley 13/2012. Si continúa navegando consideramos que acepta el uso de cookies.
+        <a href="javascript:void(0)" class="ok" onclick="PonerCookie();"><b>OK</b></a> |
+        <a href="cookies.html" target="_blank" class="info">Más información</a></p>
+      </div>
+    </div>
+
   </div> <!-- fin del contenedor general -->
 
-<!-- sccripts de jquery -->
+
+<!-- SCRIPTS DE JQUERY -->
+
 <script src="http://code.jquery.com/jquery-latest.min.js"></script>
 <script src="js/main.js"></script>
+<script src="js/cookies.js"></script>
+
+<!-- POLITICA DE COOKIES -->
+
+<!-- <script type="text/javascript">
+function getCookie(c_name){
+    var c_value = document.cookie;
+    var c_start = c_value.indexOf(" " + c_name + "=");
+    if (c_start == -1){
+        c_start = c_value.indexOf(c_name + "=");
+    }
+    if (c_start == -1){
+        c_value = null;
+    }else{
+        c_start = c_value.indexOf("=", c_start) + 1;
+        var c_end = c_value.indexOf(";", c_start);
+        if (c_end == -1){
+            c_end = c_value.length;
+        }
+        c_value = unescape(c_value.substring(c_start,c_end));
+    }
+    return c_value;
+}
+
+function setCookie(c_name,value,exdays){
+    var exdate=new Date();
+    exdate.setDate(exdate.getDate() + exdays);
+    var c_value=escape(value) + ((exdays==null) ? "" : "; expires="+exdate.toUTCString());
+    document.cookie=c_name + "=" + c_value;
+}
+
+if(getCookie('tiendaaviso')!="1"){
+    document.getElementById("barraaceptacion").style.display="block";
+}
+function PonerCookie(){
+    setCookie('tiendaaviso','1',365);
+    document.getElementById("barraaceptacion").style.display="none";
+}
+</script> -->
+
 
 <!-- IMPLEMENTACIÓN GOOGLE ANALYTICS -->
 <script>
