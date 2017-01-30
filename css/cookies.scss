@@ -1,5 +1,16 @@
 $amarillo: hsl(39, 87%, 57%);
 $verde: hsl(79, 47%, 45%);
+$texto: hsl(0, 0%, 36%);
+
+#cookies{
+  ul {
+    color: $texto;
+    list-style: disc;
+    line-height: 2em;
+    ol li{
+      list-style: decimal;}
+  }
+}
 
 #barraaceptacion {
     display:none;
