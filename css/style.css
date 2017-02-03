@@ -1,3 +1,9 @@
+/*
+*
+* ESTILOS DE LA PORTADA
+* Y ESTILOS GENERALES
+*
+*/
 @import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700");
 html {
   height: 100vh;
@@ -26,6 +32,7 @@ h4 {
 p, span {
   font-family: "Roboto", sans-serif;
   color: #5c5c5c;
+  text-align: justify;
 }
 
 a {
@@ -61,6 +68,8 @@ ul, ol {
   font-size: 2em;
   padding: .5em;
   transition: all .5s;
+  box-shadow: 0px 5px 18px 0px grey;
+  border: 2px solid snow;
 }
 .boton:hover {
   cursor: pointer;
@@ -96,7 +105,7 @@ body {
 }
 
 .contenedor {
-  margin-top: 1.8em;
+  padding-bottom: 2%;
 }
 
 header {
@@ -247,6 +256,7 @@ header #menus nav li ul li a {
 #box-servicios .secciones {
   width: 33%;
   padding: 0 1.2em;
+  flex-direction: column;
 }
 #box-servicios .secciones h3 {
   font-size: 1.5em;
@@ -271,10 +281,10 @@ header #menus nav li ul li a {
 #linepool #contenedor-linepool #texto-linepool {
   width: 50%;
   text-align: center;
-  margin: 5em 0;
-  display: flex;
-  flex-flow: column nowrap;
-  align-items: center;
+  margin: 2em 0;
+}
+#linepool #contenedor-linepool #texto-linepool p {
+  padding: 0 5%;
 }
 #linepool #contenedor-linepool #texto-linepool .boton a {
   display: block;
@@ -293,20 +303,31 @@ header #menus nav li ul li a {
 }
 #mundoline #logo-footer img {
   width: 80%;
-  margin: 0 auto;
+  margin-left: 10%;
 }
 #mundoline #texto {
-  display: flex;
-  flex-flow: column wrap;
   width: 50%;
   text-align: center;
   padding: 0 2em;
 }
 #mundoline #texto .boton {
-  width: 100%;
+  margin-bottom: 10px;
 }
 #mundoline #texto .boton a {
-  font-size: 2em;
+  font-size: 1em;
+}
+
+.manual {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  margin: 2% 0;
+  padding: 2% 0;
+  border-bottom: 1px dotted #b1a9a9;
+}
+
+.manual figure img {
+  width: 100px;
 }
 
 footer {
@@ -348,12 +369,17 @@ footer .copyright p {
   color: #007dd1;
   font-size: 1.5em;
 }
-footer .copyright i {
+footer .copyright #iconos-sociales {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+}
+footer .copyright #iconos-sociales i {
   padding: 0 15%;
   font-size: 1.5em;
   color: #007dd1;
 }
-footer .copyright i:hover {
+footer .copyright #iconos-sociales i:hover {
   color: mintcream;
 }
 footer .aviso-legal {

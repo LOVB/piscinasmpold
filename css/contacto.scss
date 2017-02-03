@@ -18,14 +18,15 @@
   display: -webkit-flex;
   display: -ms-flex;
   display: flex;
+  .contacto figure{
+    margin: 0;
+  }
 }
 
 #foto{
   height: 100%;
   img{
     position: relative;
-    right: 200px;
-    top: -200px;
   }
 }
 #texto{
@@ -45,7 +46,6 @@ form{
   height: 70%;
   input, textarea, select{
     font-size: 1.3em;
-    padding: 10px;
     border: none;
     border-bottom: 1px solid lightgrey;
   }
@@ -77,9 +77,6 @@ form{
     .contact-form{
       margin-top: 20px;
       div {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
         ul{
           width: 100%;
         }
@@ -97,7 +94,6 @@ form{
       }
       input, textarea {
         width: 100%;
-        // font-size: 18px;
         margin: 15px 0;
         border: none;
         border-bottom: 1px solid $gris;
@@ -109,7 +105,6 @@ form{
       .siscons{
         display: flex;
         justify-content: space-around;
-        align-items: center;
         p{
           margin: 20px;
           position: relative;

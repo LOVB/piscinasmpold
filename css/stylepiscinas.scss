@@ -27,8 +27,22 @@ $azul: #0378ad;
 	font-style: normal;
 }
 
+/*
+* HOJA PISCINAS PRIVADAS
+*/
+
+#prefabrica{
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  article{
+    flex-direction: column;
+    width: 50%;
+  }
+}
+
 // SECCION DE OBRA
-#obra, #presupuesto{
+.contenedor, #presupuesto{
   article{
     display: -webkit-flex;
     display: -ms-flex;
@@ -45,7 +59,7 @@ $azul: #0378ad;
       }
     }
     .texto{
-      margin: 3em 0 0 2em;
+      margin: 3em 2em;
 
       p{
         margin-top: 0;
@@ -110,6 +124,7 @@ $azul: #0378ad;
 }
 
 #equipamiento article{
+  flex-direction: column;
   h3{
     text-align: center;
     background-color: $azul;
@@ -197,17 +212,6 @@ $azul: #0378ad;
   display: -ms-flex;
   display: flex;
 }
-
-// .contenedor > article{
-//   display: flex;
-// }
-
-// .contenedor ul{
-//   list-style-type: lower-latin;
-//   li{
-//     color: $texto;
-//   }
-// }
 
 //SLIDER
 
