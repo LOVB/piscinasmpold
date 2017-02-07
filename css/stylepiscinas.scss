@@ -163,10 +163,12 @@ $azul: #0378ad;
 }
 
 // HOJA PRESUPUESTO
+
 #presupuesto div {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+
   .siscons{
   display: inline-block;
   }
@@ -212,6 +214,22 @@ $azul: #0378ad;
   display: -ms-flex;
   display: flex;
 }
+
+
+  // GALERIA DE FOTOS DE PINTEREST
+  #presupuesto .galeria{
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    h3{
+      color: $verde;
+      background-color: transparent;
+    }
+    figure{
+      width: 10%;
+    }
+  }
+
 
 //SLIDER
 

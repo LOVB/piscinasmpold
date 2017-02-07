@@ -184,6 +184,19 @@
   display: flex;
 }
 
+#presupuesto .galeria {
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+#presupuesto .galeria h3 {
+  color: #87a93c;
+  background-color: transparent;
+}
+#presupuesto .galeria figure {
+  width: 10%;
+}
+
 /* --Clearfix */
 .cf:before,
 .cf:after {
