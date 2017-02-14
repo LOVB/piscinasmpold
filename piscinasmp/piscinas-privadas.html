@@ -2,18 +2,18 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Piscinas MP</title>
+  <title>Piscinas Privadas MP</title>
   <meta name="author" content="Luis V Ballesteros">
   <meta name="owner" content="Grupo Mundoline">
   <meta name="robots" content="index, follow">
   <meta name="keywords" content="Construccion de piscinas, piscinas mp, piscinas">
-  <meta name="description" content="Grupo Mundoline presupuesto">
+  <meta name="description" content="Nos encargamos de hacer tu sueño en realidad. Construimos tu piscinas tal y como la deseas, para ti y toda tu familia. Primeras marcas y total garantía.">
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <link rel="shortcut icon" href="favicon.png">
   <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
   <link rel="stylesheet" href="https://necolas.github.io/normalize.css/5.0.0/normalize.css">
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/contacto.css">
+  <link rel="stylesheet" href="css/stylepiscinas.css">
   <link rel="stylesheet" href="css/responsive.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
 
@@ -74,66 +74,89 @@
       </div>
     </header>    <!--fin de cabezera-->
 
-    <div id="presupuesto" class="contenedor">
-      <div class="hoja-presupuesto" id="texto">
-        <h2>Solicitud de presupuesto</h2>
-        <h3>Dinos todas las características que necesites y te responderemos con un presupuesto adaptado a tus necesidades. <small>* Campos obligatorios.</small></h3>
-        <form class="contact-form" method="post" action="presupuesto.php" id="contact_form" runat="server">
-
-            <fieldset>
-              <h4>Datos personales</h4>
-                <input type="text" name="nombre" placeholder="* Nombre" required />
-                <input type="email" name="email" placeholder="* Correo Electrónico" required />
-                <input type="tel" name="telefono" placeholder="* Teléfono" required/>
-                <input type="text" name="localidad" placeholder="Localidad">
-            </fieldset>
-
-            <fieldset>
-              <h4>Tipo de picina</h4>
-              <div class="siscons">
-                <p>
-                  <input type="checkbox" name="tipo" value="hormigon"/>
-                  <label for="checkbox">Hormigón </label>
-                </p>
-                <p>
-                  <input type="checkbox" name="tipo" value="acero"/>
-                  <label for="checkbox">Acero </label>
-                </p>
-                <p>
-                  <input type="checkbox" name="tipo" value="madera"/>
-                  <label for="checkbox">Madera </label>
-                </p>
-                <p>
-                  <label for="select">Tamaño aprox. </label>
-                  <select name="medidas">
-                    <option value="5x3">5x3</option>
-                    <option value="6x3">6x3</option>
-                    <option value="7x4">7x4</option>
-                    <option value="8x4">8x4</option>
-                    <option value="10x5">10x5</option>
-                    <option value="12x6">12x6</option>
-                    <option value="superior">Superior</option>
-                  </select>
-                </p>
-              </div>
-            </fieldset>
-
-            <fieldset>
-              <h4>Deja tu descripción</h4>
-              <label for="message"></label>
-              <textarea name="mensaje" placeholder="Descripción" required></textarea>
-            </fieldset>
-
-            <input class="submit boton" type="submit" value="ENVIAR"></input>
-
-        </form>
+    <!-- contenedor imagen presupuesto -->
+    <section id="presupuesto">
+      <h1>CONSTRUIMOS TU PISCINA</h1>
+      <img src="img/slide2.jpg" alt="foto presupuesto">
+      <div class="presupuesto">
+        <a class="boton" href="presupuesto.html">Solicita Presupuesto</a>
       </div>
-    </div>
+    </section>
+
+    <!-- contededor seccion obra -->
+    <section class="contenedor" id="hormigon">
+      <h2>OBRA</h2>
+      <article>
+        <div class="foto">
+          <h3>HORMIGÓN</h3>
+          <img src="img/hormigon.jpg" alt="piscina de hormigón">
+        </div>
+        <div class="texto">
+          <p>Entre otras ventajas, las piscinas de hormigón gunitado o proyectado presentan una mayor resistencia por metro cuadrado, merced a la aplicación del hormigón H-400 (400 KG/m3).</p>
+          <p>El proyectado en sucesivas capas aporta además una mayor impermeabilización al vaso de la piscina, al eliminar la existencia de posibles poros.</p>
+          <p>La correcta colocación de los mallazos de hierro, la utilización de materiales de agarre y llagueado específico para piscinas, la fabricación in situ de nuestra piedra de coronación, combinados con la experiencia de nuestro personal técnico y un gresite de calidad hacen de nuestras piscinas los líderes del mercado.</p>
+          <a class="boton mini" href="obra.html">sigue aquí</a>
+        </div>
+      </article>
+    </section>
+
+    <!-- contededor seccion prefabricada -->
+    <section class="contenedor">
+      <h2>PREFABRICADA</h2>
+      <div id="prefabrica">
+
+        <!-- articulo acero -->
+        <article>
+          <div class="foto">
+            <h3>ACERO</h3>
+            <img src="img/acero.jpg" alt="piscina de acero">
+          </div>
+          <div class="texto">
+            <p>Las piscinas con estructura de acero se han convertido en una fiable alternativa a las de hormigón. Se trata de un producto que se consolida en el mercado año tras año merced a su resitencia, su rápida instalación, su amplia durabilidad, y la garantía de estanqueidad del vaso que nos proporciona la lámina armada o liner.</p>
+            <a class="boton mini" href="acero.html">sigue aquí</a>
+          </div>
+        </article>
+
+        <!-- articulo madera -->
+        <article>
+          <div class="foto">
+            <h3>MADERA</h3>
+            <img src="img/madera.jpg" alt="piscina de madera">
+          </div>
+          <div class="texto">
+            <p>Somos disribuidores del lider francés en fabricación de piscinas de madera a medida. Con nuestras piscinas de madera puede usted personalizar fácilmente su piscina. Elija la que mejor se adapta a sus necesidades:
+              Piscina elevada, semielevada y enterrada.
+            </p>
+            <a class="boton mini" href="madera.html">sigue aquí</a>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- contededor seccion rehabilitación -->
+    <section class="contenedor" id="reforma">
+      <h2>REFORMA Y REHABILITACIÓN</h2>
+      <article>
+        <div class="foto">
+          <!-- <h3>HORMIGÓN</h3> -->
+          <img src="img/rehabilitacion.jpg" alt="rehabilitación">
+        </div>
+        <div class="texto">
+          <p>Nos encargamos de reacondicionar, modernizar, reparar o </p>
+          <p>Con el paso del tiempo y el desgaste de los materiales, las piscinas suelen tener pérdidas
+de agua debido a asentamientos del terreno, afectando así de esta forma al vaso de la piscina o
+bien a las tuberías, produciendo perdidas de agua muy difíciles de localizar.</p>
+          <a class="boton mini" href="obra.html">sigue aquí</a>
+        </div>
+      </article>
+    </section>
+
     <!-- pie de página -->
     <footer class="contenedor">
       <nav id="menu-footer">
         <ul>
-          <li><a href="piscinas.html">PISCINAS PRIVADAS</a></li>
+          <li><a href="piscinas-privadas.html">PISCINAS PRIVADAS</a></li>
           <li><a href="piscinas-publicas.html">PISCINAS PUBLICAS</a></li>
           <li><a href="servicios.html">SERVICIOS</a></li>
           <li><a href="contacto.html">CONTACTO</a></li>
@@ -159,11 +182,9 @@
 
   </div> <!-- fin del contenedor general -->
 
-
-
-<!-- sccripts de jquery -->
-<script src="http://code.jquery.com/jquery-latest.min.js"></script>
-<script src="js/main.js"></script>
+  <!-- sccripts de jquery -->
+  <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+  <script src="js/main.js"></script>
 
 </body>
 </html>

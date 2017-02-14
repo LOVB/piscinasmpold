@@ -1,11 +1,9 @@
 #cookies ul {
   color: #5c5c5c;
   list-style: disc;
-  line-height: 2em;
-}
-#cookies ul ol li {
-  list-style: decimal;
-}
+  line-height: 2em; }
+  #cookies ul ol li {
+    list-style: decimal; }
 
 #barraaceptacion {
   display: none;
@@ -18,8 +16,7 @@
   text-align: center;
   min-height: 40px;
   color: #fff;
-  z-index: 99999;
-}
+  z-index: 99999; }
 
 .inner {
   background-color: rgba(0, 0, 0, 0.5);
@@ -29,22 +26,20 @@
   font-family: verdana;
   font-size: 12px;
   top: 10%;
-  padding-bottom: 20px;
-}
-.inner p {
-  color: #fff;
-  line-height: 1.9em;
-}
+  padding-bottom: 20px; }
+  .inner p {
+    color: #fff;
+    line-height: 1.9em; }
 
 .inner a.ok {
   padding: 4px;
   background-color: #87a93d;
   color: #fff;
-  text-decoration: none;
-}
+  text-decoration: none; }
 
 .inner a.info {
   padding-left: 5px;
   text-decoration: none;
-  color: #f1ae32;
-}
+  color: #f1ae32; }
+
+/*# sourceMappingURL=cookies.css.map */

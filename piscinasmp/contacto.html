@@ -2,19 +2,18 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Piscinas MP</title>
+    <title>Contacto MP</title>
     <meta name="author" content="Luis V Ballesteros">
     <meta name="owner" content="Grupo Mundoline">
     <meta name="robots" content="index, follow">
     <meta name="keywords" content="Construccion de piscinas, piscinas mp, piscinas">
-    <meta name="description" content="Grupo Mundoline en construcción de piscinas de madera con el sello de garantía piscinas mundoline premium">
+    <meta name="description" content="Para que te pongas en contacto con nosotros tenemos este formulario para que nos llegue toda la información necesaria para aclarar tus dudas.">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <link rel="shortcut icon" href="favicon.png">
     <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/5.0.0/normalize.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/stylepiscinas.css">
-    <link rel="stylesheet" href="css/flexslider.css" />
+    <link rel="stylesheet" href="css/contacto.css">
     <link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
 
@@ -47,7 +46,7 @@
   <noscript>
     <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K7Q653K" height="0" width="0" style="display:none;visibility:hidden"></iframe>
   </noscript>
-  <!-- End Google Tag Manager (noscript) -->
+<!-- End Google Tag Manager (noscript) -->
 
   <div id="main"><!-- contenedor general -->
 
@@ -75,74 +74,23 @@
       </div>
     </header>    <!--fin de cabezera-->
 
-    <!-- contenedor imagen presupuesto -->
-    <section id="presupuesto">
-      <h1>CONSTRUIMOS TU PISCINA</h1>
-      <img src="img/slide6.jpg" alt="foto presupuesto">
-      <div class="presupuesto">
-        <a class="boton" href="presupuesto.html">Solicita Presupuesto</a>
+    <div id="formulario" class="contenedor">
+      <div class="contacto" id="foto">
+        <figure><img src="img/bgcontacto.jpg" alt="Asistencia"></figure>
       </div>
-    </section>
-
-    <!-- contededor seccion descripción -->
-    <section class="contenedor" id="obra">
-      <h2>DESCRIPCIÓN</h2>
-      <article>
-        <div class="foto">
-          <!-- SLIDER -->
-          <div id="container" class="cf">
-        		<div id="main-slider">
-              <section class="slider">
-                <div class="flexslider carousel">
-                  <ul class="slides">
-                    <li>
-          	    	    <img src="img/slidermadera/slider1.jpg" />
-          	    		</li>
-          	    		<li>
-          	    	    <img src="img/slidermadera/slider2.jpg" />
-          	    		</li>
-          	    		<li>
-          	    	    <img src="img/slidermadera/slider3.jpg" />
-          	    		</li>
-          	    		<li>
-          	    	    <img src="img/slidermadera/slider4.jpg" />
-          	    		</li>
-          	    		<li>
-          	    	    <img src="img/slidermadera/slider5.jpg" />
-          	    		</li>
-          	    		<li>
-          	    	    <img src="img/slidermadera/slider6.jpg" />
-          	    		</li>
-                  </ul>
-                </div>
-              </section>
-            </div>
-          </div>
-          <!-- FIN SLIDER -->
-        </div>
-        <div class="texto">
-          <p>Las piscinas de madera pueden estar por encima del suelo, enterrada o semienterrada. Se pueden instalar en lugares donde no se colocaría una de hormigón por la facilidad y la versatilidad del material.</p>
-          <p>Las piscinas de madera tienen un mayor nivel de seguridad que las piscinas de hormigón o poliester, ya que puede instalarse de forma semienterrada o por encima del suelo, lo que reduce significativamente la posibilidad de caida accidental dentro de ella, ya sean niños o mascotas.
-          La madera es un material aislante por lo que la temperatura del agua será siempre más cálida que en las de hormigón, hasta 4ºC, además la madera se trata contra la agresión externa y los parásitos por lo que se reduce su mantenimiento.</p>
-          <p>Para fortalecer el caracter de la piscina, además de la madera, se pueden instalar los bordes de piedra que proporciona una nota de calidez y robustez. O si lo desea, construirla en varios niveles para poder aprovechar perfectamente el espacio utilizado, reduciendo los problemas por la irregularidad del terreno.</p>
-        </div>
-      </article>
-    </section>
-
-      <!-- SOLICITUD DE PRESUPUESTO -->
-
-    <article id="presupuesto">
-      <h2>SOLICITA PRESUPUESTO</h2>
-      <div>
-        <p>Solicita presupuesto sin compromiso. El equipo comercias te responderá rápidamente y si lo necesitas te resolvemos todas tus dudas.</p>
-        <a class="boton" href="presupuesto.html">Solicita Presupuesto</a>
+      <div class="contacto" id="texto">
+        <h2>Rellena nuestro formulario de contacto.</h2>
+        <p>Pregúntanos todas las dudas que tengas. Estaremos encantados de contestarte.</p>
+        <form class="contact-form" method="post" action="contacto.php" id="contact_form" runat="server">
+          <span class="required_notification">* Datos requeridos</span>
+          <input type="text" name="nombre" placeholder="*Nombre" required/>
+          <input type="email" name="email" placeholder="*email" required />
+          <input type="tel" name="telefono" placeholder="Teléfono"/>
+          <textarea name="mensaje" placeholder="Escriba aqui..."></textarea>
+          <input class="submit boton" type="submit"></input>
+        </form>
       </div>
-      <div class="galeria">
-        <h3>Visita nuestra galería de fotos en <b>Pinterest</b></h3>
-        <figure><a href="https://es.pinterest.com/grupomundoline/" target="_blank"><img src="img/logos/pinterest.png" alt="pinterest"></a></figure>
-      </div>
-    </article>
-
+    </div>
 
     <!-- pie de página -->
     <footer class="contenedor">
@@ -174,30 +122,9 @@
 
   </div> <!-- fin del contenedor general -->
 
-    <!-- jQuery -->
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-  <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.min.js">\x3C/script>')</script>
-
-  <!-- FlexSlider -->
-  <script defer src="js/jquery.flexslider.js"></script>
-
-  <script type="text/javascript">
-    // $(function(){
-    //   SyntaxHighlighter.all();
-    // });
-    $(window).load(function(){
-      $('.flexslider').flexslider({
-        animation: "slide",
-        animationLoop: true,
-        itemWidth: 600,
-        itemMargin: 5,
-        pausePlay: true,
-        start: function(slider){
-          $('body').removeClass('loading');
-        }
-      });
-    });
-  </script>
+<!-- sccripts de jquery -->
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script src="js/main.js"></script>
 
 </body>
 </html>
