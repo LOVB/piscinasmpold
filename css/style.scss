@@ -5,10 +5,6 @@
 *
 */
 
-
-
-
-
 $texto: hsl(0, 0%, 36%);
 $azuloscuro: hsl(204, 100%, 11%);
 $rojo: hsl(15, 71%, 56%);
@@ -436,6 +432,24 @@ footer{
       &:hover{
         text-decoration: underline;
       }
+    }
+  }
+  #direccion{
+    color: $azulfooter !important;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    font-size: .8em;
+    justify-content: center;
+    padding-top: 2em;
+    width: 100%;
+    h5{
+      color: $azulfooter;
+      margin-right: 5px;
+      text-align: center;
+    }
+    address{
+      text-align: center;
     }
   }
 }
